@@ -1,8 +1,8 @@
-# 🚀 Proyecto de Portafolio 4: Infraestructura Viva (ACME Corp)
+# 🚀 Proyecto de Portafolio 4: Infraestructura Viva (ACME)
 
 Este proyecto implementa y despliega de manera automatizada la arquitectura en la nube para la infraestructura de **ACME**, migrando sus servicios locales hacia una solución robusta en AWS simulada mediante **Floci**. 
 
-La arquitectura abarca desde el almacenamiento seguro y bases de datos gestionadas (SQL/NoSQL) hasta redes altamente disponibles con balanceo de carga, sistemas serverless, mensajería distribuida y un plan proactivo de monitoreo con alarmas.
+La arquitectura abarca desde el almacenamiento seguro y bases de datos gestionadas (SQL/NoSQL) hasta redes privadas y públicas, sistemas serverless, mensajería distribuida y un plan proactivo de monitoreo con alarmas.
 
 ---
 
