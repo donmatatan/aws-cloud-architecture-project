@@ -1,0 +1,31 @@
+{
+  "000000000000/us-east-1::/000000000000/acme-cola-eventos" : {
+    "queueName" : "acme-cola-eventos",
+    "queueUrl" : "http://localhost:4566/000000000000/acme-cola-eventos",
+    "accountId" : "000000000000",
+    "attributes" : {
+      "DelaySeconds" : "0",
+      "RedrivePolicy" : "{\"deadLetterTargetArn\":\"arn:aws:sqs:us-east-1:000000000000:acme-cola-eventos-dlq\",\"maxReceiveCount\":\"3\"}",
+      "MessageRetentionPeriod" : "86400",
+      "MaximumMessageSize" : "1048576",
+      "VisibilityTimeout" : "30"
+    },
+    "tags" : { },
+    "createdTimestamp" : "2026-07-02T21:22:22.191704694Z",
+    "lastModifiedTimestamp" : "2026-07-02T21:22:27.628673308Z"
+  },
+  "000000000000/us-east-1::/000000000000/acme-cola-eventos-dlq" : {
+    "queueName" : "acme-cola-eventos-dlq",
+    "queueUrl" : "http://localhost:4566/000000000000/acme-cola-eventos-dlq",
+    "accountId" : "000000000000",
+    "attributes" : {
+      "DelaySeconds" : "0",
+      "MessageRetentionPeriod" : "345600",
+      "MaximumMessageSize" : "1048576",
+      "VisibilityTimeout" : "30"
+    },
+    "tags" : { },
+    "createdTimestamp" : "2026-07-02T21:22:22.988943996Z",
+    "lastModifiedTimestamp" : "2026-07-02T21:22:22.988944438Z"
+  }
+}

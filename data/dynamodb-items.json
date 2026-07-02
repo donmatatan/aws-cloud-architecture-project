@@ -1,0 +1,24 @@
+{
+  "000000000000/us-east-1::AcmeTicketsSoporte" : {
+    "TK-1001" : {
+      "TicketId" : {
+        "S" : "TK-1001"
+      },
+      "ClienteId" : {
+        "S" : "CLIENTE-ACME-99"
+      },
+      "Estado" : {
+        "S" : "Abierto"
+      },
+      "Prioridad" : {
+        "S" : "Alta"
+      },
+      "FechaCreacion" : {
+        "S" : "2026-07-02"
+      },
+      "Descripcion" : {
+        "S" : "El servidor on-premise se quedo sin espacio en disco duro"
+      }
+    }
+  }
+}

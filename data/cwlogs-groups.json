@@ -1,0 +1,14 @@
+{
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error" : {
+    "logGroupName" : "/aws/rds/instance/acme-postgres-db/error",
+    "createdTime" : 1783027302814,
+    "retentionInDays" : null,
+    "tags" : { }
+  },
+  "000000000000/us-east-1::/aws/lambda/AcmeProcesarVentas" : {
+    "logGroupName" : "/aws/lambda/AcmeProcesarVentas",
+    "createdTime" : 1783027310855,
+    "retentionInDays" : 30,
+    "tags" : { }
+  }
+}

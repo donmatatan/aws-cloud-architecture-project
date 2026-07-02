@@ -1,0 +1,15 @@
+{
+    "Rules": [
+      {
+        "ID": "MoverAGlacierTras30Dias",
+        "Status": "Enabled",
+        "Prefix": "logs/",
+        "Transitions": [
+          {
+            "Days": 30,
+            "StorageClass": "GLACIER"
+          }
+        ]
+      }
+    ]
+  }

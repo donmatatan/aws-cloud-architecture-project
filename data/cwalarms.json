@@ -1,0 +1,62 @@
+{
+  "000000000000/us-east-1::acme-alarma-cola-saturada" : {
+    "alarmName" : "acme-alarma-cola-saturada",
+    "alarmArn" : "arn:aws:cloudwatch:us-east-1:000000000000:alarm:acme-alarma-cola-saturada",
+    "alarmDescription" : "Alarma: La cola SQS de ACME tiene demasiados mensajes pendientes",
+    "alarmConfigurationUpdatedTimestamp" : 1783027354,
+    "actionsEnabled" : true,
+    "okActions" : [ ],
+    "alarmActions" : [ "arn:aws:sns:us-east-1:000000000000:acme-alertas-operacionales" ],
+    "insufficientDataActions" : [ ],
+    "stateValue" : "INSUFFICIENT_DATA",
+    "stateReason" : "Unchecked",
+    "stateReasonData" : null,
+    "stateUpdatedTimestamp" : 1783027354,
+    "metricName" : "ApproximateNumberOfMessagesVisible",
+    "namespace" : "AWS/SQS",
+    "statistic" : "Sum",
+    "dimensions" : [ {
+      "name" : "QueueName",
+      "value" : "acme-cola-eventos"
+    } ],
+    "period" : 300,
+    "unit" : null,
+    "evaluationPeriods" : 1,
+    "datapointsToAlarm" : 1,
+    "threshold" : 100.0,
+    "comparisonOperator" : "GreaterThanOrEqualToThreshold",
+    "treatMissingData" : null,
+    "evaluateLowSampleCountPercentile" : null,
+    "tags" : { }
+  },
+  "000000000000/us-east-1::acme-alarma-errores-criticos" : {
+    "alarmName" : "acme-alarma-errores-criticos",
+    "alarmArn" : "arn:aws:cloudwatch:us-east-1:000000000000:alarm:acme-alarma-errores-criticos",
+    "alarmDescription" : "Alarma: Se detectaron errores críticos en la función Lambda de ACME",
+    "alarmConfigurationUpdatedTimestamp" : 1783027353,
+    "actionsEnabled" : true,
+    "okActions" : [ ],
+    "alarmActions" : [ "arn:aws:sns:us-east-1:000000000000:acme-alertas-operacionales" ],
+    "insufficientDataActions" : [ ],
+    "stateValue" : "INSUFFICIENT_DATA",
+    "stateReason" : "Unchecked",
+    "stateReasonData" : null,
+    "stateUpdatedTimestamp" : 1783027353,
+    "metricName" : "Errors",
+    "namespace" : "AWS/Lambda",
+    "statistic" : "Sum",
+    "dimensions" : [ {
+      "name" : "FunctionName",
+      "value" : "AcmeProcesarVentas"
+    } ],
+    "period" : 300,
+    "unit" : null,
+    "evaluationPeriods" : 1,
+    "datapointsToAlarm" : 1,
+    "threshold" : 5.0,
+    "comparisonOperator" : "GreaterThanOrEqualToThreshold",
+    "treatMissingData" : null,
+    "evaluateLowSampleCountPercentile" : null,
+    "tags" : { }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "000000000000/us-east-1::rtb-f94ea59dbc6580187" : {
+    "routeTableId" : "rtb-f94ea59dbc6580187",
+    "vpcId" : "vpc-a26a55ed",
+    "ownerId" : "000000000000",
+    "region" : "us-east-1",
+    "routes" : [ {
+      "destinationCidrBlock" : "10.0.0.0/16",
+      "gatewayId" : "local",
+      "state" : "active",
+      "origin" : "CreateRouteTable"
+    } ],
+    "associations" : [ {
+      "routeTableAssociationId" : "rtbassoc-d6ebfcfe7ce94c87b",
+      "routeTableId" : "rtb-f94ea59dbc6580187",
+      "subnetId" : null,
+      "gatewayId" : null,
+      "main" : true,
+      "associationState" : "associated"
+    } ],
+    "tags" : [ ]
+  },
+  "000000000000/us-east-1::rtb-default" : {
+    "routeTableId" : "rtb-default",
+    "vpcId" : "vpc-default",
+    "ownerId" : "000000000000",
+    "region" : "us-east-1",
+    "routes" : [ {
+      "destinationCidrBlock" : "172.31.0.0/16",
+      "gatewayId" : "local",
+      "state" : "active",
+      "origin" : "CreateRouteTable"
+    }, {
+      "destinationCidrBlock" : "0.0.0.0/0",
+      "gatewayId" : "igw-default",
+      "state" : "active",
+      "origin" : "CreateRoute"
+    } ],
+    "associations" : [ {
+      "routeTableAssociationId" : "rtbassoc-default",
+      "routeTableId" : "rtb-default",
+      "subnetId" : null,
+      "gatewayId" : null,
+      "main" : true,
+      "associationState" : "associated"
+    } ],
+    "tags" : [ ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e" : {
+    "logGroupName" : "/aws/rds/instance/acme-postgres-db/error",
+    "logStreamName" : "2026/07/02/45b6e78e",
+    "createdTime" : 1783027302814,
+    "firstEventTimestamp" : 1783027302815,
+    "lastEventTimestamp" : 1783027606513,
+    "lastIngestionTime" : 1783027606513,
+    "uploadSequenceToken" : "5e7c3ef0-64b8-4369-98a3-82ceb94e9294",
+    "storedBytes" : 4811
+  },
+  "000000000000/us-east-1::/aws/lambda/AcmeProcesarVentas::2026/07/02/[$LATEST]e5bd2cc0" : {
+    "logGroupName" : "/aws/lambda/AcmeProcesarVentas",
+    "logStreamName" : "2026/07/02/[$LATEST]e5bd2cc0",
+    "createdTime" : 1783027310855,
+    "firstEventTimestamp" : null,
+    "lastEventTimestamp" : null,
+    "lastIngestionTime" : 0,
+    "uploadSequenceToken" : "8d7155f3-fad4-48ff-8b9a-ad5b3980b44f",
+    "storedBytes" : 0
+  },
+  "000000000000/us-east-1::/aws/lambda/AcmeProcesarVentas::acme-stream-principal" : {
+    "logGroupName" : "/aws/lambda/AcmeProcesarVentas",
+    "logStreamName" : "acme-stream-principal",
+    "createdTime" : 1783027357394,
+    "firstEventTimestamp" : null,
+    "lastEventTimestamp" : null,
+    "lastIngestionTime" : 0,
+    "uploadSequenceToken" : "56b61d08-d31d-4ef3-b4c6-3798089dc666",
+    "storedBytes" : 0
+  }
+}

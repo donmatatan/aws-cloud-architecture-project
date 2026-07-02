@@ -1,0 +1,116 @@
+{
+  "000000000000/us-east-1::sg-default" : {
+    "groupId" : "sg-default",
+    "groupName" : "default",
+    "description" : "default VPC security group",
+    "vpcId" : "vpc-default",
+    "ownerId" : "000000000000",
+    "region" : "us-east-1",
+    "ipPermissions" : [ ],
+    "ipPermissionsEgress" : [ {
+      "ipProtocol" : "-1",
+      "fromPort" : null,
+      "toPort" : null,
+      "ipRanges" : [ {
+        "cidrIp" : "0.0.0.0/0",
+        "description" : null
+      } ],
+      "ipv6Ranges" : [ ],
+      "userIdGroupPairs" : [ ]
+    } ],
+    "tags" : [ ]
+  },
+  "000000000000/us-east-1::sg-10be3eacdb3ae9ff5" : {
+    "groupId" : "sg-10be3eacdb3ae9ff5",
+    "groupName" : "acme-balanc-sg",
+    "description" : "Firewall para el Balanceador ALB",
+    "vpcId" : "vpc-a26a55ed",
+    "ownerId" : "000000000000",
+    "region" : "us-east-1",
+    "ipPermissions" : [ {
+      "ipProtocol" : "tcp",
+      "fromPort" : 80,
+      "toPort" : 80,
+      "ipRanges" : [ {
+        "cidrIp" : "0.0.0.0/0",
+        "description" : null
+      } ],
+      "ipv6Ranges" : [ ],
+      "userIdGroupPairs" : [ ]
+    }, {
+      "ipProtocol" : "tcp",
+      "fromPort" : 443,
+      "toPort" : 443,
+      "ipRanges" : [ {
+        "cidrIp" : "0.0.0.0/0",
+        "description" : null
+      } ],
+      "ipv6Ranges" : [ ],
+      "userIdGroupPairs" : [ ]
+    } ],
+    "ipPermissionsEgress" : [ {
+      "ipProtocol" : "-1",
+      "fromPort" : null,
+      "toPort" : null,
+      "ipRanges" : [ {
+        "cidrIp" : "0.0.0.0/0",
+        "description" : null
+      } ],
+      "ipv6Ranges" : [ ],
+      "userIdGroupPairs" : [ ]
+    } ],
+    "tags" : [ ]
+  },
+  "000000000000/us-east-1::sg-63481ce8d8c88d724" : {
+    "groupId" : "sg-63481ce8d8c88d724",
+    "groupName" : "acme-rds-sg",
+    "description" : "Firewall interno para la base de datos",
+    "vpcId" : "vpc-a26a55ed",
+    "ownerId" : "000000000000",
+    "region" : "us-east-1",
+    "ipPermissions" : [ {
+      "ipProtocol" : "tcp",
+      "fromPort" : 5432,
+      "toPort" : 5432,
+      "ipRanges" : [ {
+        "cidrIp" : "10.0.0.0/16",
+        "description" : null
+      } ],
+      "ipv6Ranges" : [ ],
+      "userIdGroupPairs" : [ ]
+    } ],
+    "ipPermissionsEgress" : [ {
+      "ipProtocol" : "-1",
+      "fromPort" : null,
+      "toPort" : null,
+      "ipRanges" : [ {
+        "cidrIp" : "0.0.0.0/0",
+        "description" : null
+      } ],
+      "ipv6Ranges" : [ ],
+      "userIdGroupPairs" : [ ]
+    } ],
+    "tags" : [ ]
+  },
+  "000000000000/us-east-1::sg-60261923a63b14f08" : {
+    "groupId" : "sg-60261923a63b14f08",
+    "groupName" : "default",
+    "description" : "default VPC security group",
+    "vpcId" : "vpc-a26a55ed",
+    "ownerId" : "000000000000",
+    "region" : "us-east-1",
+    "ipPermissions" : [ ],
+    "ipPermissionsEgress" : [ {
+      "ipProtocol" : "-1",
+      "fromPort" : null,
+      "toPort" : null,
+      "ipRanges" : [ {
+        "cidrIp" : "0.0.0.0/0",
+        "description" : null
+      } ],
+      "ipv6Ranges" : [ ],
+      "userIdGroupPairs" : [ ]
+    } ],
+    "tags" : [ ]
+  }
+}

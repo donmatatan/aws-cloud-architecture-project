@@ -1,0 +1,42 @@
+{
+  "000000000000/acme-postgres-db" : {
+    "dbInstanceIdentifier" : "acme-postgres-db",
+    "engine" : "POSTGRES",
+    "engineVersion" : "16.3",
+    "masterUsername" : "jairoadmin",
+    "masterPassword" : "MiPasswordSeguro123",
+    "dbName" : null,
+    "dbInstanceClass" : "db.t3.micro",
+    "allocatedStorage" : 20,
+    "status" : "AVAILABLE",
+    "endpoint" : {
+      "address" : "172.18.0.2",
+      "port" : 7001
+    },
+    "iamDatabaseAuthenticationEnabled" : false,
+    "parameterGroupName" : null,
+    "dbSubnetGroupName" : "default",
+    "dbClusterIdentifier" : null,
+    "vpcId" : "vpc-default",
+    "availabilityZone" : "us-east-1c",
+    "multiAz" : true,
+    "subnetAvailabilityZones" : {
+      "subnet-default-c" : "us-east-1c",
+      "subnet-default-b" : "us-east-1b",
+      "subnet-default-a" : "us-east-1a"
+    },
+    "dbiResourceId" : "db-BC9301B78B1240FBA194F709",
+    "dbInstanceArn" : "arn:aws:rds:us-east-1:000000000000:db:acme-postgres-db",
+    "masterUserSecretArn" : null,
+    "masterUserSecretStatus" : null,
+    "masterUserSecretKmsKeyId" : null,
+    "tags" : { },
+    "createdAt" : "2026-07-02T21:21:42.815179109Z",
+    "proxyPort" : 7001,
+    "dockerVolumeName" : "floci-rds-95b3f5",
+    "volumeId" : "95b3f5",
+    "containerId" : "45b6e78ed875c2ceeb19930caa0a950535d3479ace4eab4ab9f7147b379250cc",
+    "containerHost" : "172.18.0.3",
+    "containerPort" : 5432
+  }
+}

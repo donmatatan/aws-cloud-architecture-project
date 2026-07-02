@@ -1,0 +1,17 @@
+{
+  "000000000000/us-east-1::/000000000000/acme-cola-eventos" : [ {
+    "messageId" : "f8fc377d-b219-470d-89ae-c04f5229d60a",
+    "body" : "{\"Type\":\"Notification\",\"MessageId\":\"0362cad1-d085-460c-92c7-37b0f9d3c1c6\",\"TopicArn\":\"arn:aws:sns:us-east-1:000000000000:acme-alertas-operacionales\",\"Timestamp\":\"2026-07-02T21:22:28.442852551Z\",\"Subject\":\"Alerta Operacional ACME\",\"Message\":\"ALERTA: Evento operacional de prueba generado por ACME\",\"MessageAttributes\":{}}",
+    "messageAttributes" : { },
+    "sentTimestamp" : "2026-07-02T21:22:28.442914179Z",
+    "firstReceiveTimestamp" : "2026-07-02T21:22:29.261789567Z",
+    "receiveCount" : 1,
+    "md5OfBody" : "9b67d5dd69df65a3398dc347aa969640",
+    "md5OfMessageAttributes" : null,
+    "messageGroupId" : null,
+    "messageDeduplicationId" : null,
+    "sequenceNumber" : 0,
+    "originalSourceQueueUrl" : null,
+    "awsTraceHeader" : null
+  } ]
+}

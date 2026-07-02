@@ -1,0 +1,56 @@
+{
+  "000000000000/us-east-1::AWS/Lambda::Errors::Name=FunctionName,Value=AcmeProcesarVentas::0001783027351::9b1c80b7-cc4f-4beb-b484-127a4fd33f52" : {
+    "namespace" : "AWS/Lambda",
+    "metricName" : "Errors",
+    "dimensions" : [ {
+      "name" : "Name",
+      "value" : "FunctionName"
+    }, {
+      "name" : "Value",
+      "value" : "AcmeProcesarVentas"
+    } ],
+    "timestamp" : 1783027351,
+    "value" : 0.0,
+    "sampleCount" : 1.0,
+    "sum" : 0.0,
+    "minimum" : 0.0,
+    "maximum" : 0.0,
+    "unit" : "Count"
+  },
+  "000000000000/us-east-1::AWS/Lambda::Invocations::Name=FunctionName,Value=AcmeProcesarVentas::0001783027351::265bf2d1-c2a5-4c50-967f-fe11d7a157ca" : {
+    "namespace" : "AWS/Lambda",
+    "metricName" : "Invocations",
+    "dimensions" : [ {
+      "name" : "Name",
+      "value" : "FunctionName"
+    }, {
+      "name" : "Value",
+      "value" : "AcmeProcesarVentas"
+    } ],
+    "timestamp" : 1783027351,
+    "value" : 10.0,
+    "sampleCount" : 1.0,
+    "sum" : 10.0,
+    "minimum" : 10.0,
+    "maximum" : 10.0,
+    "unit" : "Count"
+  },
+  "000000000000/us-east-1::AWS/SQS::ApproximateNumberOfMessagesVisible::Name=QueueName,Value=acme-cola-eventos::0001783027352::17fabf4a-14d3-41d1-8fc0-831497fdbbd5" : {
+    "namespace" : "AWS/SQS",
+    "metricName" : "ApproximateNumberOfMessagesVisible",
+    "dimensions" : [ {
+      "name" : "Name",
+      "value" : "QueueName"
+    }, {
+      "name" : "Value",
+      "value" : "acme-cola-eventos"
+    } ],
+    "timestamp" : 1783027352,
+    "value" : 0.0,
+    "sampleCount" : 1.0,
+    "sum" : 0.0,
+    "minimum" : 0.0,
+    "maximum" : 0.0,
+    "unit" : "Count"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "000000000000/topic::us-east-1::arn:aws:sns:us-east-1:000000000000:acme-alertas-operacionales" : {
+    "Name" : "acme-alertas-operacionales",
+    "TopicArn" : "arn:aws:sns:us-east-1:000000000000:acme-alertas-operacionales",
+    "Attributes" : {
+      "Policy" : "",
+      "TopicArn" : "arn:aws:sns:us-east-1:000000000000:acme-alertas-operacionales",
+      "EffectiveDeliveryPolicy" : "",
+      "DisplayName" : "",
+      "DeliveryPolicy" : ""
+    },
+    "Tags" : { },
+    "CreatedAt" : "2026-07-02T21:22:21.392413667Z"
+  }
+}

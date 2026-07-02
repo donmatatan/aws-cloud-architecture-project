@@ -1,0 +1,40 @@
+{
+  "000000000000/us-east-1::vpc-default" : {
+    "vpcId" : "vpc-default",
+    "cidrBlock" : "172.31.0.0/16",
+    "state" : "available",
+    "dhcpOptionsId" : "dopt-default",
+    "instanceTenancy" : "default",
+    "ownerId" : "000000000000",
+    "region" : "us-east-1",
+    "cidrBlockAssociationSet" : [ {
+      "associationId" : "vpc-cidr-assoc-default",
+      "cidrBlock" : "172.31.0.0/16",
+      "cidrBlockState" : "associated"
+    } ],
+    "enableDnsSupport" : true,
+    "enableDnsHostnames" : false,
+    "enableNetworkAddressUsageMetrics" : false,
+    "tags" : [ ],
+    "default" : true
+  },
+  "000000000000/us-east-1::vpc-a26a55ed" : {
+    "vpcId" : "vpc-a26a55ed",
+    "cidrBlock" : "10.0.0.0/16",
+    "state" : "available",
+    "dhcpOptionsId" : "dopt-default",
+    "instanceTenancy" : "default",
+    "ownerId" : "000000000000",
+    "region" : "us-east-1",
+    "cidrBlockAssociationSet" : [ {
+      "associationId" : "vpc-cidr-assoc-84f6eb03",
+      "cidrBlock" : "10.0.0.0/16",
+      "cidrBlockState" : "associated"
+    } ],
+    "enableDnsSupport" : true,
+    "enableDnsHostnames" : false,
+    "enableNetworkAddressUsageMetrics" : false,
+    "tags" : [ ],
+    "default" : false
+  }
+}

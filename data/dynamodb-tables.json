@@ -1,0 +1,116 @@
+{
+  "000000000000/us-east-1::AcmeTicketsSoporte" : {
+    "tableName" : "AcmeTicketsSoporte",
+    "keySchema" : [ {
+      "attributeName" : "TicketId",
+      "keyType" : "HASH"
+    } ],
+    "attributeDefinitions" : [ {
+      "attributeName" : "TicketId",
+      "attributeType" : "S"
+    }, {
+      "attributeName" : "ClienteId",
+      "attributeType" : "S"
+    }, {
+      "attributeName" : "Estado",
+      "attributeType" : "S"
+    }, {
+      "attributeName" : "Prioridad",
+      "attributeType" : "S"
+    } ],
+    "tableStatus" : "ACTIVE",
+    "creationDateTime" : "2026-07-02T21:21:44.826776749Z",
+    "itemCount" : 1,
+    "tableSizeBytes" : 0,
+    "provisionedThroughput" : {
+      "readCapacityUnits" : 5,
+      "writeCapacityUnits" : 5,
+      "lastIncreaseDateTime" : null,
+      "lastDecreaseDateTime" : null,
+      "numberOfDecreasesToday" : 0
+    },
+    "tableArn" : "arn:aws:dynamodb:us-east-1:000000000000:table/AcmeTicketsSoporte",
+    "tags" : { },
+    "globalSecondaryIndexes" : [ {
+      "indexName" : "Index_Cliente",
+      "keySchema" : [ {
+        "attributeName" : "ClienteId",
+        "keyType" : "HASH"
+      } ],
+      "indexArn" : "arn:aws:dynamodb:us-east-1:000000000000:table/AcmeTicketsSoporte/index/Index_Cliente",
+      "projectionType" : "ALL",
+      "provisionedThroughput" : {
+        "readCapacityUnits" : 5,
+        "writeCapacityUnits" : 5,
+        "lastIncreaseDateTime" : null,
+        "lastDecreaseDateTime" : null,
+        "numberOfDecreasesToday" : 0
+      },
+      "itemCount" : 0,
+      "indexSizeBytes" : 0,
+      "nonKeyAttributes" : [ ],
+      "partitionKeyName" : "ClienteId",
+      "sortKeyName" : null
+    }, {
+      "indexName" : "Index_Estado",
+      "keySchema" : [ {
+        "attributeName" : "Estado",
+        "keyType" : "HASH"
+      } ],
+      "indexArn" : "arn:aws:dynamodb:us-east-1:000000000000:table/AcmeTicketsSoporte/index/Index_Estado",
+      "projectionType" : "ALL",
+      "provisionedThroughput" : {
+        "readCapacityUnits" : 5,
+        "writeCapacityUnits" : 5,
+        "lastIncreaseDateTime" : null,
+        "lastDecreaseDateTime" : null,
+        "numberOfDecreasesToday" : 0
+      },
+      "itemCount" : 0,
+      "indexSizeBytes" : 0,
+      "nonKeyAttributes" : [ ],
+      "partitionKeyName" : "Estado",
+      "sortKeyName" : null
+    }, {
+      "indexName" : "Index_Prioridad",
+      "keySchema" : [ {
+        "attributeName" : "Prioridad",
+        "keyType" : "HASH"
+      } ],
+      "indexArn" : "arn:aws:dynamodb:us-east-1:000000000000:table/AcmeTicketsSoporte/index/Index_Prioridad",
+      "projectionType" : "ALL",
+      "provisionedThroughput" : {
+        "readCapacityUnits" : 5,
+        "writeCapacityUnits" : 5,
+        "lastIncreaseDateTime" : null,
+        "lastDecreaseDateTime" : null,
+        "numberOfDecreasesToday" : 0
+      },
+      "itemCount" : 0,
+      "indexSizeBytes" : 0,
+      "nonKeyAttributes" : [ ],
+      "partitionKeyName" : "Prioridad",
+      "sortKeyName" : null
+    } ],
+    "localSecondaryIndexes" : [ ],
+    "billingMode" : "PROVISIONED",
+    "ttlAttributeName" : null,
+    "ttlEnabled" : false,
+    "pointInTimeRecoveryEnabled" : false,
+    "pointInTimeRecoveryRecoveryPeriodInDays" : 35,
+    "deletionProtectionEnabled" : false,
+    "streamEnabled" : false,
+    "streamArn" : null,
+    "streamViewType" : null,
+    "sseEnabled" : false,
+    "sseType" : null,
+    "kmsMasterKeyArn" : null,
+    "kinesisStreamingDestinations" : [ ],
+    "tableId" : "f1b71ce5-aecc-4426-bf83-7cf87c5650b9",
+    "tableClass" : null,
+    "onDemandMaxReadRequestUnits" : null,
+    "onDemandMaxWriteRequestUnits" : null,
+    "partitionKeyName" : "TicketId",
+    "sortKeyName" : null
+  }
+}

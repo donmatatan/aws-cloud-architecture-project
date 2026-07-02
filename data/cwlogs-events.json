@@ -1,0 +1,290 @@
+{
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302818::971447bc-f4f7-4677-9335-3855458cc570" : {
+    "eventId" : "971447bc-f4f7-4677-9335-3855458cc570",
+    "timestamp" : 1783027302818,
+    "message" : " done",
+    "ingestionTime" : 1783027302818
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302817::ea116721-074e-4ee5-9a0b-50a512fa593a" : {
+    "eventId" : "ea116721-074e-4ee5-9a0b-50a512fa593a",
+    "timestamp" : 1783027302817,
+    "message" : "initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.",
+    "ingestionTime" : 1783027302817
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302818::3192fcf3-6950-41fa-bcb2-89cd87a8da1e" : {
+    "eventId" : "3192fcf3-6950-41fa-bcb2-89cd87a8da1e",
+    "timestamp" : 1783027302818,
+    "message" : "2026-07-02 21:21:41.389 UTC [53] LOG:  shutting down",
+    "ingestionTime" : 1783027302818
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302818::428d6011-6e9a-4b5e-adea-40f1cf39ac26" : {
+    "eventId" : "428d6011-6e9a-4b5e-adea-40f1cf39ac26",
+    "timestamp" : 1783027302818,
+    "message" : "2026-07-02 21:21:41.657 UTC [53] LOG:  checkpoint complete: wrote 924 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.195 s, sync=0.050 s, total=0.268 s; sync files=301, longest=0.006 s, average=0.001 s; distance=4267 kB, estimate=4267 kB; lsn=0/191AAA8, redo lsn=0/191AAA8",
+    "ingestionTime" : 1783027302818
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302817::79641f6f-82c0-461a-a174-4e2ccf0a5f3f" : {
+    "eventId" : "79641f6f-82c0-461a-a174-4e2ccf0a5f3f",
+    "timestamp" : 1783027302817,
+    "message" : "2026-07-02 21:21:40.048 UTC [40] WARNING:  no usable system locales were found",
+    "ingestionTime" : 1783027302817
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302816::46b9be2f-6972-4688-8964-fde33406ec9e" : {
+    "eventId" : "46b9be2f-6972-4688-8964-fde33406ec9e",
+    "timestamp" : 1783027302816,
+    "message" : "The default text search configuration will be set to \"english\".",
+    "ingestionTime" : 1783027302816
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302818::fb9cbc45-676d-454c-b0f8-f68a517f5246" : {
+    "eventId" : "fb9cbc45-676d-454c-b0f8-f68a517f5246",
+    "timestamp" : 1783027302818,
+    "message" : "2026-07-02 21:21:41.213 UTC [52] LOG:  database system is ready to accept connections",
+    "ingestionTime" : 1783027302818
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302818::0df328c8-0f15-4e5c-9489-b8dbd2344e98" : {
+    "eventId" : "0df328c8-0f15-4e5c-9489-b8dbd2344e98",
+    "timestamp" : 1783027302818,
+    "message" : "waiting for server to shut down....2026-07-02 21:21:41.386 UTC [52] LOG:  aborting any active transactions",
+    "ingestionTime" : 1783027302818
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302816::c251f97f-5e74-4890-a081-6c852b36d471" : {
+    "eventId" : "c251f97f-5e74-4890-a081-6c852b36d471",
+    "timestamp" : 1783027302816,
+    "message" : "fixing permissions on existing directory /var/lib/postgresql/data ... ok",
+    "ingestionTime" : 1783027302816
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302819::0aa8f6ad-43bd-41cb-8eda-5c3ce4eaf9ea" : {
+    "eventId" : "0aa8f6ad-43bd-41cb-8eda-5c3ce4eaf9ea",
+    "timestamp" : 1783027302819,
+    "message" : "2026-07-02 21:21:41.727 UTC [1] LOG:  starting PostgreSQL 16.3 on x86_64-pc-linux-musl, compiled by gcc (Alpine 13.2.1_git20240309) 13.2.1 20240309, 64-bit",
+    "ingestionTime" : 1783027302819
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302816::62145ab1-9843-4aa6-bc41-2b5b4a7cef6b" : {
+    "eventId" : "62145ab1-9843-4aa6-bc41-2b5b4a7cef6b",
+    "timestamp" : 1783027302816,
+    "message" : "Data page checksums are disabled.",
+    "ingestionTime" : 1783027302816
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302819::add43caa-29e6-462f-92b4-ad2657311544" : {
+    "eventId" : "add43caa-29e6-462f-92b4-ad2657311544",
+    "timestamp" : 1783027302819,
+    "message" : "PostgreSQL init process complete; ready for start up.",
+    "ingestionTime" : 1783027302819
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302816::01adc032-6e7a-4acf-bf0b-01f196c6b458" : {
+    "eventId" : "01adc032-6e7a-4acf-bf0b-01f196c6b458",
+    "timestamp" : 1783027302816,
+    "message" : "The default database encoding has accordingly been set to \"UTF8\".",
+    "ingestionTime" : 1783027302816
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302818::3568b6fe-0697-49e6-a477-4b9cfce53e0b" : {
+    "eventId" : "3568b6fe-0697-49e6-a477-4b9cfce53e0b",
+    "timestamp" : 1783027302818,
+    "message" : "2026-07-02 21:21:41.394 UTC [53] LOG:  checkpoint starting: shutdown immediate",
+    "ingestionTime" : 1783027302818
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302817::2503e39c-6d5c-47b9-bcef-403085abb560" : {
+    "eventId" : "2503e39c-6d5c-47b9-bcef-403085abb560",
+    "timestamp" : 1783027302817,
+    "message" : "selecting default max_connections ... 100",
+    "ingestionTime" : 1783027302817
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302818::7a6b9925-1a27-4c12-85a0-88167bb220fd" : {
+    "eventId" : "7a6b9925-1a27-4c12-85a0-88167bb220fd",
+    "timestamp" : 1783027302818,
+    "message" : "CREATE DATABASE",
+    "ingestionTime" : 1783027302818
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302816::8c07463e-587a-4f47-a985-f90647aa6e22" : {
+    "eventId" : "8c07463e-587a-4f47-a985-f90647aa6e22",
+    "timestamp" : 1783027302816,
+    "message" : "This user must also own the server process.",
+    "ingestionTime" : 1783027302816
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302817::9639e42b-e808-4350-89e3-b5480ca41076" : {
+    "eventId" : "9639e42b-e808-4350-89e3-b5480ca41076",
+    "timestamp" : 1783027302817,
+    "message" : "syncing data to disk ... ok",
+    "ingestionTime" : 1783027302817
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302819::065dd375-839c-4821-8db4-763079685a76" : {
+    "eventId" : "065dd375-839c-4821-8db4-763079685a76",
+    "timestamp" : 1783027302819,
+    "message" : "2026-07-02 21:21:41.772 UTC [1] LOG:  database system is ready to accept connections",
+    "ingestionTime" : 1783027302819
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302819::91de1281-4d0d-4a48-afab-55970cadc995" : {
+    "eventId" : "91de1281-4d0d-4a48-afab-55970cadc995",
+    "timestamp" : 1783027302819,
+    "message" : "2026-07-02 21:21:41.727 UTC [1] LOG:  listening on IPv6 address \"::\", port 5432",
+    "ingestionTime" : 1783027302819
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302817::3fa1a9ad-9da6-49c6-8627-9316c7cc4bd3" : {
+    "eventId" : "3fa1a9ad-9da6-49c6-8627-9316c7cc4bd3",
+    "timestamp" : 1783027302817,
+    "message" : "2026-07-02 21:21:41.175 UTC [52] LOG:  listening on Unix socket \"/var/run/postgresql/.s.PGSQL.5432\"",
+    "ingestionTime" : 1783027302817
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302817::5dfcdec6-6bfa-4d18-8e4d-4cf50260137a" : {
+    "eventId" : "5dfcdec6-6bfa-4d18-8e4d-4cf50260137a",
+    "timestamp" : 1783027302817,
+    "message" : "sh: locale: not found",
+    "ingestionTime" : 1783027302817
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302818::2c3a3784-594a-403f-9ac9-7be2c467110e" : {
+    "eventId" : "2c3a3784-594a-403f-9ac9-7be2c467110e",
+    "timestamp" : 1783027302818,
+    "message" : "2026-07-02 21:21:41.389 UTC [52] LOG:  background worker \"logical replication launcher\" (PID 58) exited with exit code 1",
+    "ingestionTime" : 1783027302818
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302817::93042857-19d6-48bb-9a82-ae5643796a0a" : {
+    "eventId" : "93042857-19d6-48bb-9a82-ae5643796a0a",
+    "timestamp" : 1783027302817,
+    "message" : "performing post-bootstrap initialization ... ok",
+    "ingestionTime" : 1783027302817
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302818::7a3a6bc1-b412-4587-80ee-a2f7f8b7702e" : {
+    "eventId" : "7a3a6bc1-b412-4587-80ee-a2f7f8b7702e",
+    "timestamp" : 1783027302818,
+    "message" : "2026-07-02 21:21:41.381 UTC [52] LOG:  received fast shutdown request",
+    "ingestionTime" : 1783027302818
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302816::3046ded4-3fa1-4758-be9f-be91df818b83" : {
+    "eventId" : "3046ded4-3fa1-4758-be9f-be91df818b83",
+    "timestamp" : 1783027302816,
+    "message" : "creating subdirectories ... ok",
+    "ingestionTime" : 1783027302816
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302817::add2197c-1911-490d-8fef-e376c4b20512" : {
+    "eventId" : "add2197c-1911-490d-8fef-e376c4b20512",
+    "timestamp" : 1783027302817,
+    "message" : "selecting default shared_buffers ... 128MB",
+    "ingestionTime" : 1783027302817
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027601866::8760f471-25f9-4ad3-986c-eb556702dfda" : {
+    "eventId" : "8760f471-25f9-4ad3-986c-eb556702dfda",
+    "timestamp" : 1783027601866,
+    "message" : "2026-07-02 21:26:41.866 UTC [72] LOG:  checkpoint starting: time",
+    "ingestionTime" : 1783027601866
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302819::a283ae3a-185b-4b9d-8a49-3b81debc203b" : {
+    "eventId" : "a283ae3a-185b-4b9d-8a49-3b81debc203b",
+    "timestamp" : 1783027302819,
+    "message" : "2026-07-02 21:21:41.764 UTC [74] LOG:  database system was shut down at 2026-07-02 21:21:41 UTC",
+    "ingestionTime" : 1783027302819
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302816::87f0b841-5ac3-403c-9343-affaa2e5e653" : {
+    "eventId" : "87f0b841-5ac3-403c-9343-affaa2e5e653",
+    "timestamp" : 1783027302816,
+    "message" : "selecting dynamic shared memory implementation ... posix",
+    "ingestionTime" : 1783027302816
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302818::bc28a311-c04d-40f3-b2c0-0f98bf75ee92" : {
+    "eventId" : "bc28a311-c04d-40f3-b2c0-0f98bf75ee92",
+    "timestamp" : 1783027302818,
+    "message" : "2026-07-02 21:21:41.204 UTC [55] LOG:  database system was shut down at 2026-07-02 21:21:40 UTC",
+    "ingestionTime" : 1783027302818
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302817::1becd52e-1dc4-40fb-a44b-92a70bf01da1" : {
+    "eventId" : "1becd52e-1dc4-40fb-a44b-92a70bf01da1",
+    "timestamp" : 1783027302817,
+    "message" : "waiting for server to start....2026-07-02 21:21:41.168 UTC [52] LOG:  starting PostgreSQL 16.3 on x86_64-pc-linux-musl, compiled by gcc (Alpine 13.2.1_git20240309) 13.2.1 20240309, 64-bit",
+    "ingestionTime" : 1783027302817
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302817::80078b6a-662c-4848-951d-921b649f8657" : {
+    "eventId" : "80078b6a-662c-4848-951d-921b649f8657",
+    "timestamp" : 1783027302817,
+    "message" : "creating configuration files ... ok",
+    "ingestionTime" : 1783027302817
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302817::7ded101b-b2b5-4481-abce-b64e9ba94569" : {
+    "eventId" : "7ded101b-b2b5-4481-abce-b64e9ba94569",
+    "timestamp" : 1783027302817,
+    "message" : "selecting default time zone ... UTC",
+    "ingestionTime" : 1783027302817
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302816::59468158-292b-4b3f-9339-a9a38ed7c64d" : {
+    "eventId" : "59468158-292b-4b3f-9339-a9a38ed7c64d",
+    "timestamp" : 1783027302816,
+    "message" : "The database cluster will be initialized with locale \"en_US.utf8\".",
+    "ingestionTime" : 1783027302816
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302817::463b462b-0020-4e19-b4f2-a1c8af7870e2" : {
+    "eventId" : "463b462b-0020-4e19-b4f2-a1c8af7870e2",
+    "timestamp" : 1783027302817,
+    "message" : "running bootstrap script ... ok",
+    "ingestionTime" : 1783027302817
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302817::055f4f6a-9bec-4737-871c-cb77cf9f88a6" : {
+    "eventId" : "055f4f6a-9bec-4737-871c-cb77cf9f88a6",
+    "timestamp" : 1783027302817,
+    "message" : "initdb: warning: enabling \"trust\" authentication for local connections",
+    "ingestionTime" : 1783027302817
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302818::def2a103-2f6a-46af-aeef-4223a8080ed3" : {
+    "eventId" : "def2a103-2f6a-46af-aeef-4223a8080ed3",
+    "timestamp" : 1783027302818,
+    "message" : "server started",
+    "ingestionTime" : 1783027302818
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302818::0cd38360-b1e6-4a7e-83fd-210a73e1b886" : {
+    "eventId" : "0cd38360-b1e6-4a7e-83fd-210a73e1b886",
+    "timestamp" : 1783027302818,
+    "message" : "/usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*",
+    "ingestionTime" : 1783027302818
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027606513::f7fb1eca-d489-4002-bbda-5239d113dccc" : {
+    "eventId" : "f7fb1eca-d489-4002-bbda-5239d113dccc",
+    "timestamp" : 1783027606513,
+    "message" : "2026-07-02 21:26:46.512 UTC [72] LOG:  checkpoint complete: wrote 49 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.624 s, sync=0.011 s, total=4.647 s; sync files=16, longest=0.008 s, average=0.001 s; distance=264 kB, estimate=264 kB; lsn=0/195CBF0, redo lsn=0/195CBB8",
+    "ingestionTime" : 1783027606513
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302815::cf34923d-666c-46f5-93e5-76f2299d9a3f" : {
+    "eventId" : "cf34923d-666c-46f5-93e5-76f2299d9a3f",
+    "timestamp" : 1783027302815,
+    "message" : "The files belonging to this database system will be owned by user \"postgres\".",
+    "ingestionTime" : 1783027302815
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302819::eb70cf3a-7156-4e5d-b956-231d58c4f526" : {
+    "eventId" : "eb70cf3a-7156-4e5d-b956-231d58c4f526",
+    "timestamp" : 1783027302819,
+    "message" : "2026-07-02 21:21:41.740 UTC [1] LOG:  listening on Unix socket \"/var/run/postgresql/.s.PGSQL.5432\"",
+    "ingestionTime" : 1783027302819
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302818::28331798-c106-4bae-a851-d6d43e2a64d9" : {
+    "eventId" : "28331798-c106-4bae-a851-d6d43e2a64d9",
+    "timestamp" : 1783027302818,
+    "message" : "server stopped",
+    "ingestionTime" : 1783027302818
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302818::6206444f-931f-4a02-bdf2-7462eabdf59f" : {
+    "eventId" : "6206444f-931f-4a02-bdf2-7462eabdf59f",
+    "timestamp" : 1783027302818,
+    "message" : " done",
+    "ingestionTime" : 1783027302818
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302817::08134f0a-2327-4a77-8c83-a945cb077667" : {
+    "eventId" : "08134f0a-2327-4a77-8c83-a945cb077667",
+    "timestamp" : 1783027302817,
+    "message" : "Success. You can now start the database server using:",
+    "ingestionTime" : 1783027302817
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302818::f50d472f-ca1c-40b0-910d-f2d937a0b713" : {
+    "eventId" : "f50d472f-ca1c-40b0-910d-f2d937a0b713",
+    "timestamp" : 1783027302818,
+    "message" : "2026-07-02 21:21:41.665 UTC [52] LOG:  database system is shut down",
+    "ingestionTime" : 1783027302818
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302817::129e0f26-2e38-4afb-a12c-119529ef5ae2" : {
+    "eventId" : "129e0f26-2e38-4afb-a12c-119529ef5ae2",
+    "timestamp" : 1783027302817,
+    "message" : "    pg_ctl -D /var/lib/postgresql/data -l logfile start",
+    "ingestionTime" : 1783027302817
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e::001783027302819::4f7e550d-c014-4b51-a9fe-6da951690ccf" : {
+    "eventId" : "4f7e550d-c014-4b51-a9fe-6da951690ccf",
+    "timestamp" : 1783027302819,
+    "message" : "2026-07-02 21:21:41.727 UTC [1] LOG:  listening on IPv4 address \"0.0.0.0\", port 5432",
+    "ingestionTime" : 1783027302819
+  }
+}

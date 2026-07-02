@@ -1,0 +1,23 @@
+{
+  "000000000000/sub::us-east-1::arn:aws:sns:us-east-1:000000000000:acme-alertas-operacionales:7feefd77-91ea-4ca6-8119-798ee37cf3a9" : {
+    "accountId" : "000000000000",
+    "SubscriptionArn" : "arn:aws:sns:us-east-1:000000000000:acme-alertas-operacionales:7feefd77-91ea-4ca6-8119-798ee37cf3a9",
+    "TopicArn" : "arn:aws:sns:us-east-1:000000000000:acme-alertas-operacionales",
+    "Protocol" : "email",
+    "Endpoint" : "alertas@acme-empresa.com",
+    "Owner" : "000000000000",
+    "Attributes" : {
+      "ConfirmationToken" : "9665a66688944d7f8b3e40702c906910ce09a9dbac884d50a755f5d99e0e242f",
+      "PendingConfirmation" : "true"
+    }
+  },
+  "000000000000/sub::us-east-1::arn:aws:sns:us-east-1:000000000000:acme-alertas-operacionales:e4c7d3c2-ecba-4ba3-8fe9-08c5fd51013b" : {
+    "accountId" : "000000000000",
+    "SubscriptionArn" : "arn:aws:sns:us-east-1:000000000000:acme-alertas-operacionales:e4c7d3c2-ecba-4ba3-8fe9-08c5fd51013b",
+    "TopicArn" : "arn:aws:sns:us-east-1:000000000000:acme-alertas-operacionales",
+    "Protocol" : "sqs",
+    "Endpoint" : "arn:aws:sqs:us-east-1:000000000000:acme-cola-eventos",
+    "Owner" : "000000000000",
+    "Attributes" : { }
+  }
+}
