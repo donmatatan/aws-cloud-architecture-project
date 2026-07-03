@@ -20,32 +20,11 @@
     } ],
     "tags" : [ ]
   },
-  "000000000000/us-east-1::sg-d6e5e8789da629e71" : {
-    "groupId" : "sg-d6e5e8789da629e71",
-    "groupName" : "default",
-    "description" : "default VPC security group",
-    "vpcId" : "vpc-77ce58f5",
-    "ownerId" : "000000000000",
-    "region" : "us-east-1",
-    "ipPermissions" : [ ],
-    "ipPermissionsEgress" : [ {
-      "ipProtocol" : "-1",
-      "fromPort" : null,
-      "toPort" : null,
-      "ipRanges" : [ {
-        "cidrIp" : "0.0.0.0/0",
-        "description" : null
-      } ],
-      "ipv6Ranges" : [ ],
-      "userIdGroupPairs" : [ ]
-    } ],
-    "tags" : [ ]
-  },
-  "000000000000/us-east-1::sg-27379a8a713c750f8" : {
-    "groupId" : "sg-27379a8a713c750f8",
+  "000000000000/us-east-1::sg-b47576eee0b9fa957" : {
+    "groupId" : "sg-b47576eee0b9fa957",
     "groupName" : "acme-rds-sg",
     "description" : "Firewall interno para la base de datos",
-    "vpcId" : "vpc-77ce58f5",
+    "vpcId" : "vpc-fa4d588b",
     "ownerId" : "000000000000",
     "region" : "us-east-1",
     "ipPermissions" : [ {
@@ -72,11 +51,32 @@
     } ],
     "tags" : [ ]
   },
-  "000000000000/us-east-1::sg-991c9acd5c0dca960" : {
-    "groupId" : "sg-991c9acd5c0dca960",
+  "000000000000/us-east-1::sg-0712e0c4150104e5f" : {
+    "groupId" : "sg-0712e0c4150104e5f",
+    "groupName" : "default",
+    "description" : "default VPC security group",
+    "vpcId" : "vpc-fa4d588b",
+    "ownerId" : "000000000000",
+    "region" : "us-east-1",
+    "ipPermissions" : [ ],
+    "ipPermissionsEgress" : [ {
+      "ipProtocol" : "-1",
+      "fromPort" : null,
+      "toPort" : null,
+      "ipRanges" : [ {
+        "cidrIp" : "0.0.0.0/0",
+        "description" : null
+      } ],
+      "ipv6Ranges" : [ ],
+      "userIdGroupPairs" : [ ]
+    } ],
+    "tags" : [ ]
+  },
+  "000000000000/us-east-1::sg-b1ed7d84d102fc36b" : {
+    "groupId" : "sg-b1ed7d84d102fc36b",
     "groupName" : "acme-balanc-sg",
     "description" : "Firewall para el Balanceador ALB",
-    "vpcId" : "vpc-77ce58f5",
+    "vpcId" : "vpc-fa4d588b",
     "ownerId" : "000000000000",
     "region" : "us-east-1",
     "ipPermissions" : [ {

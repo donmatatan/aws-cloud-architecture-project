@@ -1,32 +1,32 @@
 {
-  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/03/83707087" : {
-    "logGroupName" : "/aws/rds/instance/acme-postgres-db/error",
-    "logStreamName" : "2026/07/03/83707087",
-    "createdTime" : 1783115003888,
-    "firstEventTimestamp" : 1783115003890,
-    "lastEventTimestamp" : 1783115307625,
-    "lastIngestionTime" : 1783115307625,
-    "uploadSequenceToken" : "71cd15a1-3da1-490e-a080-1c60873efa4a",
-    "storedBytes" : 4811
-  },
-  "000000000000/us-east-1::/aws/lambda/AcmeProcesarVentas::2026/07/03/[$LATEST]fc2d39c1" : {
+  "000000000000/us-east-1::/aws/lambda/AcmeProcesarVentas::2026/07/03/[$LATEST]cffe7e13" : {
     "logGroupName" : "/aws/lambda/AcmeProcesarVentas",
-    "logStreamName" : "2026/07/03/[$LATEST]fc2d39c1",
-    "createdTime" : 1783115014284,
-    "firstEventTimestamp" : null,
-    "lastEventTimestamp" : null,
-    "lastIngestionTime" : 0,
-    "uploadSequenceToken" : "b4acc14f-2dc3-47c2-a844-7a4a3e4a0acd",
-    "storedBytes" : 0
+    "logStreamName" : "2026/07/03/[$LATEST]cffe7e13",
+    "createdTime" : 1783116618061,
+    "firstEventTimestamp" : 1783116641095,
+    "lastEventTimestamp" : 1783116641096,
+    "lastIngestionTime" : 1783116641096,
+    "uploadSequenceToken" : "9b8a60bc-6e11-41b3-a74a-cf84f7c34222",
+    "storedBytes" : 263
+  },
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/03/993c3d6a" : {
+    "logGroupName" : "/aws/rds/instance/acme-postgres-db/error",
+    "logStreamName" : "2026/07/03/993c3d6a",
+    "createdTime" : 1783116609530,
+    "firstEventTimestamp" : 1783116609532,
+    "lastEventTimestamp" : 1783116609537,
+    "lastIngestionTime" : 1783116609537,
+    "uploadSequenceToken" : "e0b4ee80-7d0a-463e-9d2d-c36bc04138f0",
+    "storedBytes" : 4406
   },
   "000000000000/us-east-1::/aws/lambda/AcmeProcesarVentas::acme-stream-principal" : {
     "logGroupName" : "/aws/lambda/AcmeProcesarVentas",
     "logStreamName" : "acme-stream-principal",
-    "createdTime" : 1783115060646,
+    "createdTime" : 1783116667042,
     "firstEventTimestamp" : null,
     "lastEventTimestamp" : null,
     "lastIngestionTime" : 0,
-    "uploadSequenceToken" : "896bddbe-1307-4ebf-881b-d1c80d27eac7",
+    "uploadSequenceToken" : "3133b702-6778-45d1-b71d-7093614a3839",
     "storedBytes" : 0
   }
 }

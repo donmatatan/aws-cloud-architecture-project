@@ -53,9 +53,9 @@
     "tags" : [ ],
     "default" : true
   },
-  "000000000000/us-east-1::acl-31ec83062be7c4c9a" : {
-    "networkAclId" : "acl-31ec83062be7c4c9a",
-    "vpcId" : "vpc-77ce58f5",
+  "000000000000/us-east-1::acl-89f1d749076267f66" : {
+    "networkAclId" : "acl-89f1d749076267f66",
+    "vpcId" : "vpc-fa4d588b",
     "ownerId" : "000000000000",
     "region" : "us-east-1",
     "entries" : [ {
@@ -92,17 +92,17 @@
       "portRangeTo" : null
     } ],
     "associations" : [ {
-      "networkAclAssociationId" : "aclassoc-d9e9fe7b23378fb8a",
-      "networkAclId" : "acl-31ec83062be7c4c9a",
-      "subnetId" : "subnet-49b38cdf"
+      "networkAclAssociationId" : "aclassoc-c730e5b8e61cc2b67",
+      "networkAclId" : "acl-89f1d749076267f66",
+      "subnetId" : "subnet-5dcd092e"
     }, {
-      "networkAclAssociationId" : "aclassoc-78879f2a2c5a44baa",
-      "networkAclId" : "acl-31ec83062be7c4c9a",
-      "subnetId" : "subnet-09dfe92e"
+      "networkAclAssociationId" : "aclassoc-53d06a7dc8e1e912d",
+      "networkAclId" : "acl-89f1d749076267f66",
+      "subnetId" : "subnet-ccf32427"
     }, {
-      "networkAclAssociationId" : "aclassoc-029b5e9868335798a",
-      "networkAclId" : "acl-31ec83062be7c4c9a",
-      "subnetId" : "subnet-a0d7e50d"
+      "networkAclAssociationId" : "aclassoc-506870f9912d92d20",
+      "networkAclId" : "acl-89f1d749076267f66",
+      "subnetId" : "subnet-69af04e1"
     } ],
     "tags" : [ ],
     "default" : true

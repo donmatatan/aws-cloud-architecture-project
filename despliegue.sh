@@ -171,7 +171,7 @@ verificar "Despliegue de la función Lambda AcmeProcesarVentas"
 # Realizar Pruebas de Escalabilidad y Ejecución bajo Carga
 echo "Ejecutando pruebas de escalabilidad sobre Lambda..."
 for i in {1..10}; do 
-  aws lambda invoke --function-name AcmeProcesarVentas --endpoint-url=http://localhost:4566 response_$i.json >/dev/null
+  aws lambda invoke --function-name AcmeProcesarVentas --endpoint-url=http://localhost:4566 resultados-prueba-carga/response_$i.json >/dev/null
   verificar "Invocación $i de Lambda"
 done
 
