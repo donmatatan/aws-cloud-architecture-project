@@ -18,8 +18,8 @@
     "tags" : [ ],
     "default" : true
   },
-  "000000000000/us-east-1::vpc-a26a55ed" : {
-    "vpcId" : "vpc-a26a55ed",
+  "000000000000/us-east-1::vpc-77ce58f5" : {
+    "vpcId" : "vpc-77ce58f5",
     "cidrBlock" : "10.0.0.0/16",
     "state" : "available",
     "dhcpOptionsId" : "dopt-default",
@@ -27,7 +27,7 @@
     "ownerId" : "000000000000",
     "region" : "us-east-1",
     "cidrBlockAssociationSet" : [ {
-      "associationId" : "vpc-cidr-assoc-84f6eb03",
+      "associationId" : "vpc-cidr-assoc-b963d588",
       "cidrBlock" : "10.0.0.0/16",
       "cidrBlockState" : "associated"
     } ],

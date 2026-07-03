@@ -25,17 +25,17 @@
       "subnet-default-b" : "us-east-1b",
       "subnet-default-a" : "us-east-1a"
     },
-    "dbiResourceId" : "db-BC9301B78B1240FBA194F709",
+    "dbiResourceId" : "db-9891FC5401834853BE16181C",
     "dbInstanceArn" : "arn:aws:rds:us-east-1:000000000000:db:acme-postgres-db",
     "masterUserSecretArn" : null,
     "masterUserSecretStatus" : null,
     "masterUserSecretKmsKeyId" : null,
     "tags" : { },
-    "createdAt" : "2026-07-02T21:21:42.815179109Z",
+    "createdAt" : "2026-07-03T21:43:23.889051129Z",
     "proxyPort" : 7001,
-    "dockerVolumeName" : "floci-rds-95b3f5",
-    "volumeId" : "95b3f5",
-    "containerId" : "45b6e78ed875c2ceeb19930caa0a950535d3479ace4eab4ab9f7147b379250cc",
+    "dockerVolumeName" : "floci-rds-695616",
+    "volumeId" : "695616",
+    "containerId" : "83707087e16020131e79c461b81e558e67f055c919ecdc36da7f02407cdc81ff",
     "containerHost" : "172.18.0.3",
     "containerPort" : 5432
   }

@@ -1,7 +1,7 @@
 {
-  "000000000000/us-east-1::rtb-f94ea59dbc6580187" : {
-    "routeTableId" : "rtb-f94ea59dbc6580187",
-    "vpcId" : "vpc-a26a55ed",
+  "000000000000/us-east-1::rtb-a9a5b886f9b8c3fee" : {
+    "routeTableId" : "rtb-a9a5b886f9b8c3fee",
+    "vpcId" : "vpc-77ce58f5",
     "ownerId" : "000000000000",
     "region" : "us-east-1",
     "routes" : [ {
@@ -11,8 +11,8 @@
       "origin" : "CreateRouteTable"
     } ],
     "associations" : [ {
-      "routeTableAssociationId" : "rtbassoc-d6ebfcfe7ce94c87b",
-      "routeTableId" : "rtb-f94ea59dbc6580187",
+      "routeTableAssociationId" : "rtbassoc-9a839b8ba35806887",
+      "routeTableId" : "rtb-a9a5b886f9b8c3fee",
       "subnetId" : null,
       "gatewayId" : null,
       "main" : true,

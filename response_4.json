@@ -1,1 +1,1 @@
-{"statusCode": 200, "body": "{\"mensaje\": \"Reporte de ventas ACME procesado con exito\", \"tiempo_procesamiento_segundos\": 0.15281224250793457}"}
+{"statusCode": 200, "body": "{\"mensaje\": \"Reporte de ventas ACME procesado con exito\", \"tiempo_procesamiento_segundos\": 0.06227421760559082}"}

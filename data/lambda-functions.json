@@ -24,8 +24,8 @@
     "environment" : { },
     "tags" : { },
     "policies" : [ ],
-    "lastModified" : 1783027332928,
-    "revisionId" : "db589a9a-04fe-4f8f-b472-501cd74d51b0",
+    "lastModified" : 1783115035098,
+    "revisionId" : "07e2321d-fdda-46d7-b48a-5c344eb09a0a",
     "version" : "$LATEST",
     "urlConfig" : null,
     "reservedConcurrentExecutions" : null,
@@ -36,10 +36,10 @@
     "layers" : [ ],
     "kmsKeyArn" : null,
     "vpcConfig" : {
-      "SubnetIds" : [ "subnet-18b7547f" ],
-      "SecurityGroupIds" : [ "sg-63481ce8d8c88d724" ]
+      "SubnetIds" : [ "subnet-a0d7e50d" ],
+      "SecurityGroupIds" : [ "sg-27379a8a713c750f8" ]
     },
-    "codeSha256" : "rDI60ht04oJT0w+KEV5MYBI09YRDzqV7WDT/Y6MipT4=",
+    "codeSha256" : "6SrzhZRabEcKhGkpucM2tm95PQYZfsvSdaJ3NYNfQxk=",
     "hotReloadHostPath" : null
   }
 }

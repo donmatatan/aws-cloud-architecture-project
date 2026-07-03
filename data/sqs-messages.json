@@ -1,12 +1,12 @@
 {
   "000000000000/us-east-1::/000000000000/acme-cola-eventos" : [ {
-    "messageId" : "f8fc377d-b219-470d-89ae-c04f5229d60a",
-    "body" : "{\"Type\":\"Notification\",\"MessageId\":\"0362cad1-d085-460c-92c7-37b0f9d3c1c6\",\"TopicArn\":\"arn:aws:sns:us-east-1:000000000000:acme-alertas-operacionales\",\"Timestamp\":\"2026-07-02T21:22:28.442852551Z\",\"Subject\":\"Alerta Operacional ACME\",\"Message\":\"ALERTA: Evento operacional de prueba generado por ACME\",\"MessageAttributes\":{}}",
+    "messageId" : "574f9ac2-f9bb-4e55-9924-8476ab5806fb",
+    "body" : "{\"Type\":\"Notification\",\"MessageId\":\"1cd0c316-67ec-49e1-bb21-aa09c1fa6ccc\",\"TopicArn\":\"arn:aws:sns:us-east-1:000000000000:acme-alertas-operacionales\",\"Timestamp\":\"2026-07-03T21:44:10.791016795Z\",\"Subject\":\"Alerta Operacional ACME\",\"Message\":\"ALERTA: Evento operacional de prueba generado por ACME\",\"MessageAttributes\":{}}",
     "messageAttributes" : { },
-    "sentTimestamp" : "2026-07-02T21:22:28.442914179Z",
-    "firstReceiveTimestamp" : "2026-07-02T21:22:29.261789567Z",
+    "sentTimestamp" : "2026-07-03T21:44:10.791053853Z",
+    "firstReceiveTimestamp" : "2026-07-03T21:44:12.133504485Z",
     "receiveCount" : 1,
-    "md5OfBody" : "9b67d5dd69df65a3398dc347aa969640",
+    "md5OfBody" : "2055f571be771fda7d9e8cc0a211db5e",
     "md5OfMessageAttributes" : null,
     "messageGroupId" : null,
     "messageDeduplicationId" : null,

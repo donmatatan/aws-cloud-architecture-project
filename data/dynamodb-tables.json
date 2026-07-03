@@ -19,7 +19,7 @@
       "attributeType" : "S"
     } ],
     "tableStatus" : "ACTIVE",
-    "creationDateTime" : "2026-07-02T21:21:44.826776749Z",
+    "creationDateTime" : "2026-07-03T21:43:26.954460134Z",
     "itemCount" : 1,
     "tableSizeBytes" : 0,
     "provisionedThroughput" : {
@@ -96,7 +96,7 @@
     "billingMode" : "PROVISIONED",
     "ttlAttributeName" : null,
     "ttlEnabled" : false,
-    "pointInTimeRecoveryEnabled" : false,
+    "pointInTimeRecoveryEnabled" : true,
     "pointInTimeRecoveryRecoveryPeriodInDays" : 35,
     "deletionProtectionEnabled" : false,
     "streamEnabled" : false,
@@ -106,7 +106,7 @@
     "sseType" : null,
     "kmsMasterKeyArn" : null,
     "kinesisStreamingDestinations" : [ ],
-    "tableId" : "f1b71ce5-aecc-4426-bf83-7cf87c5650b9",
+    "tableId" : "c512a75a-90bb-452e-8f73-bb64d0ce6f11",
     "tableClass" : null,
     "onDemandMaxReadRequestUnits" : null,
     "onDemandMaxWriteRequestUnits" : null,

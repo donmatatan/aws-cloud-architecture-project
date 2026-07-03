@@ -1,32 +1,32 @@
 {
-  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/02/45b6e78e" : {
+  "000000000000/us-east-1::/aws/rds/instance/acme-postgres-db/error::2026/07/03/83707087" : {
     "logGroupName" : "/aws/rds/instance/acme-postgres-db/error",
-    "logStreamName" : "2026/07/02/45b6e78e",
-    "createdTime" : 1783027302814,
-    "firstEventTimestamp" : 1783027302815,
-    "lastEventTimestamp" : 1783027606513,
-    "lastIngestionTime" : 1783027606513,
-    "uploadSequenceToken" : "5e7c3ef0-64b8-4369-98a3-82ceb94e9294",
+    "logStreamName" : "2026/07/03/83707087",
+    "createdTime" : 1783115003888,
+    "firstEventTimestamp" : 1783115003890,
+    "lastEventTimestamp" : 1783115307625,
+    "lastIngestionTime" : 1783115307625,
+    "uploadSequenceToken" : "71cd15a1-3da1-490e-a080-1c60873efa4a",
     "storedBytes" : 4811
   },
-  "000000000000/us-east-1::/aws/lambda/AcmeProcesarVentas::2026/07/02/[$LATEST]e5bd2cc0" : {
+  "000000000000/us-east-1::/aws/lambda/AcmeProcesarVentas::2026/07/03/[$LATEST]fc2d39c1" : {
     "logGroupName" : "/aws/lambda/AcmeProcesarVentas",
-    "logStreamName" : "2026/07/02/[$LATEST]e5bd2cc0",
-    "createdTime" : 1783027310855,
+    "logStreamName" : "2026/07/03/[$LATEST]fc2d39c1",
+    "createdTime" : 1783115014284,
     "firstEventTimestamp" : null,
     "lastEventTimestamp" : null,
     "lastIngestionTime" : 0,
-    "uploadSequenceToken" : "8d7155f3-fad4-48ff-8b9a-ad5b3980b44f",
+    "uploadSequenceToken" : "b4acc14f-2dc3-47c2-a844-7a4a3e4a0acd",
     "storedBytes" : 0
   },
   "000000000000/us-east-1::/aws/lambda/AcmeProcesarVentas::acme-stream-principal" : {
     "logGroupName" : "/aws/lambda/AcmeProcesarVentas",
     "logStreamName" : "acme-stream-principal",
-    "createdTime" : 1783027357394,
+    "createdTime" : 1783115060646,
     "firstEventTimestamp" : null,
     "lastEventTimestamp" : null,
     "lastIngestionTime" : 0,
-    "uploadSequenceToken" : "56b61d08-d31d-4ef3-b4c6-3798089dc666",
+    "uploadSequenceToken" : "896bddbe-1307-4ebf-881b-d1c80d27eac7",
     "storedBytes" : 0
   }
 }
