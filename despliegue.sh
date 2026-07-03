@@ -103,6 +103,16 @@ aws dynamodb create-table \
   --endpoint-url=http://localhost:4566
 verificar "Creación de la tabla DynamoDB AcmeTicketsSoporte"
 
+# =========================================================================
+# ESTRATEGIA DE RESPALDO (PITR) - MÉTRICA: Estrategia de respaldo NoSQL
+# =========================================================================
+# Habilitar Point-in-Time Recovery (PITR) para recuperación ante desastres de los últimos 35 días
+aws dynamodb update-continuous-backups \
+  --table-name AcmeTicketsSoporte \
+  --point-in-time-recovery-specification PointInTimeRecoveryEnabled=true \
+  --endpoint-url=http://localhost:4566
+verificar "Habilitación de Backup Continuo (PITR) en DynamoDB"
+
 # Prueba de integración con una aplicación. 
 # Usamos como aplicación AWS CLI para mostrar que se acaba de registrar un ticket:
 aws dynamodb put-item \
@@ -126,6 +136,10 @@ aws dynamodb query \
   --expression-attribute-values '{":v1": {"S": "CLIENTE-ACME-99"}}' \
   --endpoint-url=http://localhost:4566
 verificar "Consulta de verificación (query) en DynamoDB"
+
+# Verificación de que el backup continuo está activo en la tabla
+aws dynamodb describe-continuous-backups --table-name AcmeTicketsSoporte --endpoint-url=http://localhost:4566 --query "ContinuousBackupsDescription.PointInTimeRecoveryDescription.PointInTimeRecoveryStatus" --output text | grep -q "ENABLED"
+verificar "Verificación de Backup Continuo (PITR) en estado ENABLED"
 
 
 echo "========================================================================="
