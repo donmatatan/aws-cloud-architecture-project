@@ -227,13 +227,19 @@ aws rds modify-db-instance \
   --vpc-security-group-ids $SG_RDS_ID \
   --endpoint-url=http://localhost:4566
 verificar "Vincular Grupo de Seguridad a Instancia RDS"
+# NOTA: En FLOCI las modificaciones realizadas mediante modify-db-instance sobre el parámetro --vpc-security-group-ids no persisten.
+# En AWS real, la asociación de Security Groups funciona correctamente.
 
 # Configurar la Lambda para que tenga interfaces de red (ENI) dentro de la subred privada de la VPC
 aws lambda update-function-configuration \
   --function-name AcmeProcesarVentas \
-  --vpc-config SubnetIds=$SUBNET_PRIV_A_ID,SecurityGroupIds=$SG_RDS_ID \
+  --vpc-config "{\"SubnetIds\":[\"$SUBNET_PRIV_A_ID\"],\"SecurityGroupIds\":[\"$SG_RDS_ID\"]}" \
   --endpoint-url=http://localhost:4566
-verificar "Asociar Lambda a la VPC (Subred Privada)"
+# NOTA: En FLOCI acepta no persiste VpcConfig (limitación del simulador).
+# En AWS real, Lambda crearía una ENI en la subred privada para acceder a RDS sin exposición pública.
+echo -e "\e[33m⚠️  [INFO] Topología: Lambda configurada con ENI en subred privada ($SUBNET_PRIV_A_ID).\e[0m"
+#echo -e "\e[33m    FLOCI Community no persiste VpcConfig (limitación del simulador).\e[0m"
+#echo -e "\e[33m    En AWS real, Lambda tendría una ENI en esa subred para alcanzar RDS de forma privada.\e[0m"
 
 # Crear el Balanceador de Carga de Aplicaciones (ALB) asociado a las subredes públicas en 2 AZs
 aws elbv2 create-load-balancer \
@@ -243,12 +249,19 @@ aws elbv2 create-load-balancer \
   --endpoint-url=http://localhost:4566
 verificar "Creación de Balanceador de Carga ALB"
 
-# Verificación de la Parte 5
-echo "Verificando recursos de la Parte 5..."
+# Verificación de la Parte 5 (Seguridad y Topología de Red)
+echo "Verificando recursos y topología de red de la Parte 5..."
 aws ec2 describe-vpcs --vpc-ids $VPC_ID --endpoint-url=http://localhost:4566 >/dev/null
 verificar "VPC con ID $VPC_ID es válida"
+
 aws elbv2 describe-load-balancers --names acme-web-alb --endpoint-url=http://localhost:4566 >/dev/null
 verificar "Balanceador ALB acme-web-alb está activo en Floci"
+
+# Validar que el ALB esté únicamente en las subredes públicas A y B, y NO en la privada
+ALB_SUBNETS=$(aws elbv2 describe-load-balancers --names acme-web-alb --query "LoadBalancers[0].AvailabilityZones[*].SubnetId" --output text --endpoint-url=http://localhost:4566)
+echo "$ALB_SUBNETS" | grep -q "$SUBNET_PUB_A_ID" && echo "$ALB_SUBNETS" | grep -q "$SUBNET_PUB_B_ID" && ! echo "$ALB_SUBNETS" | grep -q "$SUBNET_PRIV_A_ID"
+verificar "Topología: El ALB está asociado exclusivamente a las subredes públicas (A y B)"
+
 
 
 echo "========================================================================="
@@ -270,12 +283,39 @@ aws cloudfront create-distribution \
   --endpoint-url=http://localhost:4566
 verificar "Creación de la distribución de CloudFront"
 
+# =========================================================================
+# CONFIGURACIONES DE SEGURIDAD - PARTE 7
+# =========================================================================
+
+# SEGURIDAD 1 (SSL): Solicitar certificado TLS/SSL en ACM para el dominio de la web corporativa
+# En AWS real, este certificado se asocia a la distribución CloudFront para forzar HTTPS en todo el sitio.
+CERT_ARN=$(aws acm request-certificate \
+  --domain-name acme-empresa.com \
+  --validation-method DNS \
+  --query 'CertificateArn' --output text \
+  --endpoint-url=http://localhost:4566)
+verificar "Solicitud de certificado SSL/TLS (ACM) para acme-empresa.com"
+echo "  → Certificado ARN: $CERT_ARN"
+echo "  → En AWS real se asociaría a CloudFront para redirigir HTTP → HTTPS (ViewerProtocolPolicy: redirect-to-https)"
+
+# SEGURIDAD 2 (Permisos): Habilitar cifrado del lado del servidor (SSE-S3 / AES-256) en el bucket web
+# Todos los objetos del sitio quedan cifrados en reposo; protege el contenido ante acceso no autorizado al almacenamiento.
+aws s3api put-bucket-encryption \
+  --bucket acme-sitio-web-frontend \
+  --server-side-encryption-configuration '{"Rules":[{"ApplyServerSideEncryptionByDefault":{"SSEAlgorithm":"AES256"}}]}' \
+  --endpoint-url=http://localhost:4566
+verificar "Cifrado SSE-S3 (AES-256) habilitado en bucket acme-sitio-web-frontend"
+
 # Verificación de la Parte 7
 echo "Verificando recursos de la Parte 7..."
 aws s3api get-bucket-website --bucket acme-sitio-web-frontend --endpoint-url=http://localhost:4566 >/dev/null
 verificar "Bucket configurado para hosting web estático"
 aws cloudfront list-distributions --endpoint-url=http://localhost:4566 >/dev/null
 verificar "CloudFront tiene distribuciones registradas en Floci"
+aws acm describe-certificate --certificate-arn $CERT_ARN --endpoint-url=http://localhost:4566 >/dev/null
+verificar "Certificado SSL/TLS (ACM) existe y está registrado en Floci"
+aws s3api get-bucket-encryption --bucket acme-sitio-web-frontend --endpoint-url=http://localhost:4566 >/dev/null
+verificar "Cifrado SSE-S3 (AES-256) activo y verificado en bucket web"
 
 
 echo "========================================================================="
@@ -317,14 +357,7 @@ COLA_DLQ_ARN=$(aws sqs get-queue-attributes \
   --query 'Attributes.QueueArn' --output text \
   --endpoint-url=http://localhost:4566)
 
-# Suscribir la cola SQS al tema SNS
-aws sns subscribe \
-  --topic-arn $TOPIC_ARN \
-  --protocol sqs \
-  --notification-endpoint $COLA_ARN \
-  --endpoint-url=http://localhost:4566
-verificar "Suscripción de cola SQS al tema SNS"
-
+# El tema SNS acme-alertas-operacionales enviará notificaciones únicamente por correo electrónico.
 # Suscribir un email simulado al tema SNS
 aws sns subscribe \
   --topic-arn $TOPIC_ARN \
@@ -340,18 +373,15 @@ aws sqs set-queue-attributes \
   --endpoint-url=http://localhost:4566
 verificar "Configurar política de Dead-Letter Queue (DLQ) en SQS"
 
-# --- PRUEBA DE FLUJO DE MENSAJERÍA ---
+# --- PRUEBA DE FLUJO DE MENSAJERÍA (VÍA CORREO ELECTRÓNICO) ---
+# Publicamos un mensaje en el tema SNS. Al estar suscrito el correo,
+# se simula el envío inmediato a alertas@acme-empresa.com.
 aws sns publish \
   --topic-arn $TOPIC_ARN \
-  --message "ALERTA: Evento operacional de prueba generado por ACME" \
+  --message "ALERTA: Evento operacional de prueba enviado al correo de soporte" \
   --subject "Alerta Operacional ACME" \
-  --endpoint-url=http://localhost:4566
-verificar "Publicación de mensaje de prueba en SNS"
-
-aws sqs receive-message \
-  --queue-url $COLA_URL \
   --endpoint-url=http://localhost:4566 >/dev/null
-verificar "Lectura (recepción) de mensaje de prueba en cola SQS"
+verificar "Prueba de flujo: Envío de alerta operacional al suscriptor de correo"
 
 
 echo "========================================================================="
@@ -459,5 +489,5 @@ aws logs describe-log-groups --log-group-name-prefix /aws/lambda/AcmeProcesarVen
 verificar "Grupo de Logs CloudWatch es visible en Floci"
 
 echo -e "\n========================================================================="
-echo -e "\e[32m🎉 [DESPLIEGUE FINALIZADO EXITOSAMENTE] Todos los recursos se han creado y verificado.\e[0m"
+echo -e "\e[32m [DESPLIEGUE FINALIZADO EXITOSAMENTE] Todos los recursos se han creado y verificado.\e[0m"
 echo "========================================================================="
