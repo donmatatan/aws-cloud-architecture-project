@@ -11,8 +11,8 @@
       "VisibilityTimeout" : "30"
     },
     "tags" : { },
-    "createdTimestamp" : "2026-07-03T22:10:52.870232183Z",
-    "lastModifiedTimestamp" : "2026-07-03T22:10:57.855031111Z"
+    "createdTimestamp" : "2026-07-07T03:59:31.756663069Z",
+    "lastModifiedTimestamp" : "2026-07-07T03:59:37.383722713Z"
   },
   "000000000000/us-east-1::/000000000000/acme-cola-eventos-dlq" : {
     "queueName" : "acme-cola-eventos-dlq",
@@ -25,7 +25,7 @@
       "VisibilityTimeout" : "30"
     },
     "tags" : { },
-    "createdTimestamp" : "2026-07-03T22:10:53.703200745Z",
-    "lastModifiedTimestamp" : "2026-07-03T22:10:53.703201168Z"
+    "createdTimestamp" : "2026-07-07T03:59:32.610028971Z",
+    "lastModifiedTimestamp" : "2026-07-07T03:59:32.610044482Z"
   }
 }

@@ -1,23 +1,14 @@
 {
-  "000000000000/sub::us-east-1::arn:aws:sns:us-east-1:000000000000:acme-alertas-operacionales:eba57d2d-bba9-40ee-ab69-77aaaf0bfc4b" : {
+  "000000000000/sub::us-east-1::arn:aws:sns:us-east-1:000000000000:acme-alertas-operacionales:8c1d577e-fbaa-47b6-b1a0-aa2ced147df7" : {
     "accountId" : "000000000000",
-    "SubscriptionArn" : "arn:aws:sns:us-east-1:000000000000:acme-alertas-operacionales:eba57d2d-bba9-40ee-ab69-77aaaf0bfc4b",
+    "SubscriptionArn" : "arn:aws:sns:us-east-1:000000000000:acme-alertas-operacionales:8c1d577e-fbaa-47b6-b1a0-aa2ced147df7",
     "TopicArn" : "arn:aws:sns:us-east-1:000000000000:acme-alertas-operacionales",
     "Protocol" : "email",
     "Endpoint" : "alertas@acme-empresa.com",
     "Owner" : "000000000000",
     "Attributes" : {
-      "ConfirmationToken" : "5955d369da584193aa5dfd62529cc87d8265e097609b4c44babe58d33226523b",
+      "ConfirmationToken" : "0e6b441723404a139063942cd10630d3f4e66a92993344da8419cd13f827c1bb",
       "PendingConfirmation" : "true"
     }
-  },
-  "000000000000/sub::us-east-1::arn:aws:sns:us-east-1:000000000000:acme-alertas-operacionales:2c51992c-ad04-43a3-a87d-451573c73772" : {
-    "accountId" : "000000000000",
-    "SubscriptionArn" : "arn:aws:sns:us-east-1:000000000000:acme-alertas-operacionales:2c51992c-ad04-43a3-a87d-451573c73772",
-    "TopicArn" : "arn:aws:sns:us-east-1:000000000000:acme-alertas-operacionales",
-    "Protocol" : "sqs",
-    "Endpoint" : "arn:aws:sqs:us-east-1:000000000000:acme-cola-eventos",
-    "Owner" : "000000000000",
-    "Attributes" : { }
   }
 }

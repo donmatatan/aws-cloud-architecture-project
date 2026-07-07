@@ -26,9 +26,19 @@ verificar "Creación de bucket acme-datos-frecuentes"
 aws s3api create-bucket --bucket acme-archivado-historico --endpoint-url=http://localhost:4566
 verificar "Creación de bucket acme-archivado-historico"
 
-# Aplicar política de ciclo de vida:
+# Aplicar política de ciclo de vida al bucket estándar:
 aws s3api put-bucket-lifecycle-configuration --bucket acme-datos-frecuentes --lifecycle-configuration file://lifecycle.json --endpoint-url=http://localhost:4566
 verificar "Aplicar política de ciclo de vida en acme-datos-frecuentes"
+
+# Aplicar política de ciclo de vida al bucket de respaldo:
+aws s3api put-bucket-lifecycle-configuration --bucket acme-archivado-historico --lifecycle-configuration file://lifecycle_backup.json --endpoint-url=http://localhost:4566
+verificar "Aplicar política de ciclo de vida en acme-archivado-historico"
+
+# --- ESTRATEGIA DE RESPALDO AUTOMÁTICO (AUTOMATIZACIÓN CON SCRIPTS) ---
+# Al finalizar el día, se sincroniza el bucket estándar con el bucket de backup histórico
+# guardando los archivos directamente en la clase de almacenamiento GLACIER.
+aws s3 sync s3://acme-datos-frecuentes s3://acme-archivado-historico --storage-class GLACIER --endpoint-url=http://localhost:4566
+verificar "Sincronización automática de Backup Diario en Glacier"
 
 # Verificación de la Parte 1
 echo "Verificando recursos de la Parte 1..."
@@ -36,6 +46,10 @@ aws s3api head-bucket --bucket acme-datos-frecuentes --endpoint-url=http://local
 verificar "Bucket acme-datos-frecuentes existe y es accesible"
 aws s3api head-bucket --bucket acme-archivado-historico --endpoint-url=http://localhost:4566 >/dev/null
 verificar "Bucket acme-archivado-historico existe y es accesible"
+aws s3api get-bucket-lifecycle-configuration --bucket acme-datos-frecuentes --endpoint-url=http://localhost:4566 >/dev/null
+verificar "Política de ciclo de vida activa en acme-datos-frecuentes"
+aws s3api get-bucket-lifecycle-configuration --bucket acme-archivado-historico --endpoint-url=http://localhost:4566 >/dev/null
+verificar "Política de ciclo de vida activa en acme-archivado-historico"
 
 
 echo "========================================================================="

@@ -1,7 +1,7 @@
 {
   "000000000000/acme-datos-frecuentes" : {
     "name" : "acme-datos-frecuentes",
-    "creationDate" : "2026-07-03T22:10:01.755145907Z",
+    "creationDate" : "2026-07-07T03:58:18.389589914Z",
     "versioningStatus" : null,
     "loggingConfiguration" : null,
     "tags" : { },
@@ -23,7 +23,7 @@
   },
   "000000000000/acme-sitio-web-frontend" : {
     "name" : "acme-sitio-web-frontend",
-    "creationDate" : "2026-07-03T22:10:47.019590135Z",
+    "creationDate" : "2026-07-07T03:59:19.625036927Z",
     "versioningStatus" : null,
     "loggingConfiguration" : null,
     "tags" : { },
@@ -35,7 +35,7 @@
     "lifecycleConfiguration" : null,
     "transitionDefaultMinimumObjectSize" : null,
     "acl" : null,
-    "encryptionConfiguration" : null,
+    "encryptionConfiguration" : "<ServerSideEncryptionConfiguration xmlns=\"http://s3.amazonaws.com/doc/2006-03-01/\"><Rule><ApplyServerSideEncryptionByDefault><SSEAlgorithm>AES256</SSEAlgorithm></ApplyServerSideEncryptionByDefault></Rule></ServerSideEncryptionConfiguration>",
     "publicAccessBlockConfiguration" : null,
     "ownershipControlsConfiguration" : null,
     "requestPaymentPayer" : null,
@@ -48,7 +48,7 @@
   },
   "000000000000/acme-archivado-historico" : {
     "name" : "acme-archivado-historico",
-    "creationDate" : "2026-07-03T22:10:02.898773665Z",
+    "creationDate" : "2026-07-07T03:58:19.547463066Z",
     "versioningStatus" : null,
     "loggingConfiguration" : null,
     "tags" : { },
@@ -57,8 +57,8 @@
     "defaultRetention" : null,
     "policy" : null,
     "corsConfiguration" : null,
-    "lifecycleConfiguration" : null,
-    "transitionDefaultMinimumObjectSize" : null,
+    "lifecycleConfiguration" : "<LifecycleConfiguration xmlns=\"http://s3.amazonaws.com/doc/2006-03-01/\"><Rule><ID>ArchivadoInmediatoAGlacier</ID><Status>Enabled</Status><Filter /><Transition><Days>0</Days><StorageClass>GLACIER</StorageClass></Transition></Rule></LifecycleConfiguration>",
+    "transitionDefaultMinimumObjectSize" : "all_storage_classes_128K",
     "acl" : null,
     "encryptionConfiguration" : null,
     "publicAccessBlockConfiguration" : null,

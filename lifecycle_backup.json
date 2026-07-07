@@ -1,0 +1,15 @@
+{
+  "Rules": [
+    {
+      "ID": "ArchivadoInmediatoAGlacier",
+      "Status": "Enabled",
+      "Filter": {},
+      "Transitions": [
+        {
+          "Days": 0,
+          "StorageClass": "GLACIER"
+        }
+      ]
+    }
+  ]
+}

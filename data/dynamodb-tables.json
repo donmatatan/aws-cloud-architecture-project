@@ -19,7 +19,7 @@
       "attributeType" : "S"
     } ],
     "tableStatus" : "ACTIVE",
-    "creationDateTime" : "2026-07-03T22:10:11.278947271Z",
+    "creationDateTime" : "2026-07-07T03:58:39.145266397Z",
     "itemCount" : 1,
     "tableSizeBytes" : 0,
     "provisionedThroughput" : {
@@ -106,7 +106,7 @@
     "sseType" : null,
     "kmsMasterKeyArn" : null,
     "kinesisStreamingDestinations" : [ ],
-    "tableId" : "db3aa83e-fa71-4c16-ac56-9b805e551f3d",
+    "tableId" : "3aaef89c-dee1-434e-aa0f-68df23cf5115",
     "tableClass" : null,
     "onDemandMaxReadRequestUnits" : null,
     "onDemandMaxWriteRequestUnits" : null,

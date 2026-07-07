@@ -1,46 +1,7 @@
 {
-  "000000000000/us-east-1::sgr-76e06d4f0a4fa97f6" : {
-    "securityGroupRuleId" : "sgr-76e06d4f0a4fa97f6",
-    "groupId" : "sg-b1ed7d84d102fc36b",
-    "groupOwnerId" : "000000000000",
-    "ipProtocol" : "tcp",
-    "fromPort" : 443,
-    "toPort" : 443,
-    "cidrIpv4" : "0.0.0.0/0",
-    "cidrIpv6" : null,
-    "description" : null,
-    "tags" : [ ],
-    "egress" : false
-  },
-  "000000000000/us-east-1::sgr-d36664e7156fdecca" : {
-    "securityGroupRuleId" : "sgr-d36664e7156fdecca",
-    "groupId" : "sg-b47576eee0b9fa957",
-    "groupOwnerId" : "000000000000",
-    "ipProtocol" : "tcp",
-    "fromPort" : 5432,
-    "toPort" : 5432,
-    "cidrIpv4" : "10.0.0.0/16",
-    "cidrIpv6" : null,
-    "description" : null,
-    "tags" : [ ],
-    "egress" : false
-  },
-  "000000000000/us-east-1::sgr-00e2b4d5cff5a73d6" : {
-    "securityGroupRuleId" : "sgr-00e2b4d5cff5a73d6",
-    "groupId" : "sg-b1ed7d84d102fc36b",
-    "groupOwnerId" : "000000000000",
-    "ipProtocol" : "tcp",
-    "fromPort" : 80,
-    "toPort" : 80,
-    "cidrIpv4" : "0.0.0.0/0",
-    "cidrIpv6" : null,
-    "description" : null,
-    "tags" : [ ],
-    "egress" : false
-  },
-  "000000000000/us-east-1::sgr-196b157890adec095" : {
-    "securityGroupRuleId" : "sgr-196b157890adec095",
-    "groupId" : "sg-0712e0c4150104e5f",
+  "000000000000/us-east-1::sgr-dd4482bc1762b1785" : {
+    "securityGroupRuleId" : "sgr-dd4482bc1762b1785",
+    "groupId" : "sg-b322a790e76fe61c8",
     "groupOwnerId" : "000000000000",
     "ipProtocol" : "-1",
     "fromPort" : null,
@@ -51,8 +12,8 @@
     "tags" : [ ],
     "egress" : true
   },
-  "000000000000/us-east-1::sgr-34d7cac3512662e2d" : {
-    "securityGroupRuleId" : "sgr-34d7cac3512662e2d",
+  "000000000000/us-east-1::sgr-84bd1efc73cfbc26c" : {
+    "securityGroupRuleId" : "sgr-84bd1efc73cfbc26c",
     "groupId" : "sg-default",
     "groupOwnerId" : "000000000000",
     "ipProtocol" : "-1",
@@ -64,9 +25,22 @@
     "tags" : [ ],
     "egress" : true
   },
-  "000000000000/us-east-1::sgr-c4718e940a1efc7cc" : {
-    "securityGroupRuleId" : "sgr-c4718e940a1efc7cc",
-    "groupId" : "sg-b1ed7d84d102fc36b",
+  "000000000000/us-east-1::sgr-a9f3b5080a46720a6" : {
+    "securityGroupRuleId" : "sgr-a9f3b5080a46720a6",
+    "groupId" : "sg-b322a790e76fe61c8",
+    "groupOwnerId" : "000000000000",
+    "ipProtocol" : "tcp",
+    "fromPort" : 5432,
+    "toPort" : 5432,
+    "cidrIpv4" : "10.0.0.0/16",
+    "cidrIpv6" : null,
+    "description" : null,
+    "tags" : [ ],
+    "egress" : false
+  },
+  "000000000000/us-east-1::sgr-695640997600644b1" : {
+    "securityGroupRuleId" : "sgr-695640997600644b1",
+    "groupId" : "sg-736074976b3ba1a2b",
     "groupOwnerId" : "000000000000",
     "ipProtocol" : "-1",
     "fromPort" : null,
@@ -77,9 +51,9 @@
     "tags" : [ ],
     "egress" : true
   },
-  "000000000000/us-east-1::sgr-0571dcd90fbd9b071" : {
-    "securityGroupRuleId" : "sgr-0571dcd90fbd9b071",
-    "groupId" : "sg-b47576eee0b9fa957",
+  "000000000000/us-east-1::sgr-d45df5818073e9d71" : {
+    "securityGroupRuleId" : "sgr-d45df5818073e9d71",
+    "groupId" : "sg-84e960ae61c92389b",
     "groupOwnerId" : "000000000000",
     "ipProtocol" : "-1",
     "fromPort" : null,
@@ -89,5 +63,31 @@
     "description" : null,
     "tags" : [ ],
     "egress" : true
+  },
+  "000000000000/us-east-1::sgr-b7eba5fb5a1588f25" : {
+    "securityGroupRuleId" : "sgr-b7eba5fb5a1588f25",
+    "groupId" : "sg-736074976b3ba1a2b",
+    "groupOwnerId" : "000000000000",
+    "ipProtocol" : "tcp",
+    "fromPort" : 80,
+    "toPort" : 80,
+    "cidrIpv4" : "0.0.0.0/0",
+    "cidrIpv6" : null,
+    "description" : null,
+    "tags" : [ ],
+    "egress" : false
+  },
+  "000000000000/us-east-1::sgr-2517595854479bff5" : {
+    "securityGroupRuleId" : "sgr-2517595854479bff5",
+    "groupId" : "sg-736074976b3ba1a2b",
+    "groupOwnerId" : "000000000000",
+    "ipProtocol" : "tcp",
+    "fromPort" : 443,
+    "toPort" : 443,
+    "cidrIpv4" : "0.0.0.0/0",
+    "cidrIpv6" : null,
+    "description" : null,
+    "tags" : [ ],
+    "egress" : false
   }
 }

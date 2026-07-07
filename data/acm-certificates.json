@@ -1,0 +1,43 @@
+{
+  "000000000000/us-east-1::a1d88e95-b2bf-4aca-a3cf-537c64ed2895" : {
+    "arn" : "arn:aws:acm:us-east-1:000000000000:certificate/a1d88e95-b2bf-4aca-a3cf-537c64ed2895",
+    "domainName" : "acme-empresa.com",
+    "subjectAlternativeNames" : [ "acme-empresa.com" ],
+    "status" : "ISSUED",
+    "type" : "AMAZON_ISSUED",
+    "validationMethod" : "DNS",
+    "createdAt" : "2026-07-07T03:59:22.908324080Z",
+    "issuedAt" : "2026-07-07T03:59:22.908324080Z",
+    "importedAt" : null,
+    "notBefore" : "2026-07-07T03:59:22.878175795Z",
+    "notAfter" : "2027-07-07T03:59:22.878175795Z",
+    "serial" : "272617890924815605361240101359954651088",
+    "subject" : "CN=acme-empresa.com",
+    "issuer" : "CN=Amazon,OU=Server CA 1B,O=Amazon,C=US",
+    "keyAlgorithm" : "RSA-2048",
+    "signatureAlgorithm" : "SHA512WithRSA",
+    "inUseBy" : [ ],
+    "tags" : { },
+    "certificateBody" : "-----BEGIN CERTIFICATE-----\nMIIDKTCCAhGgAwIBAgIRAM0YS8NuJ3TvS6QjtclTZ9AwDQYJKoZIhvcNAQENBQAw\nRjEPMA0GA1UEAwwGQW1hem9uMRUwEwYDVQQLDAxTZXJ2ZXIgQ0EgMUIxDzANBgNV\nBAoMBkFtYXpvbjELMAkGA1UEBhMCVVMwHhcNMjYwNzA3MDM1OTIyWhcNMjcwNzA3\nMDM1OTIyWjAbMRkwFwYDVQQDDBBhY21lLWVtcHJlc2EuY29tMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3OsWPErBuYoxXwTenP5OQmGozd0LXpwPGZpA\nVwyuLG1Sy26L/pqvt0o6Y/vB0dyWE8/ceXfOLuIS835GlLj7kX+DldILoFd3RJU4\nxiKOtM28fAFgosnaWyMr4Jpct8W7IHowcDdg5XsmmYBeFJOEyUCA7CRsjhHWR1mw\nGzp/LgrgsVgYZLFSN+39GQfybRQ+uXLHuTmzZHMoGrZREKRjwhRBUUTB4l1Nvm44\n9DzqgGyGSAcv18azQUeegzpyhapJSw+SDwWkVhiiYP4+lxyvvE1OFITisMeedq4c\nv3iIAQ+qMm/HaAS/ZKlTW6wOffl4Bn/wccXzNtadWQRvkt95HQIDAQABoz0wOzAb\nBgNVHREEFDASghBhY21lLWVtcHJlc2EuY29tMA4GA1UdDwEB/wQEAwIFoDAMBgNV\nHRMBAf8EAjAAMA0GCSqGSIb3DQEBDQUAA4IBAQAgusoeHhUukMyIDihc9e6PDPMZ\nE0KOh7+etWXC6QexR8+/AOrtSAPcinR6sq/04o5qAMryNhLrMZFyH0uaxlwB30Sv\nvyWN7fdebBtwLeH9r+PnIosGhJG+IH6HfvLVMbw6Ozcwe4Fgizt4lUkshGleiy/A\nsZZQdCYeITP4e55z//moJonaP1PA28HVl1t6gS+b8jExxmMDeRO22A45YF7PJAe1\nfSDZpltPkTJqXVN6ZjY9j5Xf7fNbccO8Zf+80t+lRhKgYyBtE8gpZV2hlLQdKXYs\nt5dgQ0FviLPgsOa46BOMHVygn0cnHAluVI+LfcSE8i2l6HL0B/eV7ExaSAXE\n-----END CERTIFICATE-----\n",
+    "privateKey" : "-----BEGIN RSA PRIVATE KEY-----\nMIIEogIBAAKCAQEA3OsWPErBuYoxXwTenP5OQmGozd0LXpwPGZpAVwyuLG1Sy26L\n/pqvt0o6Y/vB0dyWE8/ceXfOLuIS835GlLj7kX+DldILoFd3RJU4xiKOtM28fAFg\nosnaWyMr4Jpct8W7IHowcDdg5XsmmYBeFJOEyUCA7CRsjhHWR1mwGzp/LgrgsVgY\nZLFSN+39GQfybRQ+uXLHuTmzZHMoGrZREKRjwhRBUUTB4l1Nvm449DzqgGyGSAcv\n18azQUeegzpyhapJSw+SDwWkVhiiYP4+lxyvvE1OFITisMeedq4cv3iIAQ+qMm/H\naAS/ZKlTW6wOffl4Bn/wccXzNtadWQRvkt95HQIDAQABAoIBAA4qiwX5uzt1F55i\ntw21JvqNvZ/Z1VFPS46WPBr45rBVoFIIODTu4Was/VqM+cxFy1/g29/0JUYPXCy+\nA7OkuwkE9sCkM/entC+zK+1UqPcCHFyNUA+QRw7CDh28eEaWiN3XyARiILYGdB6y\nwxWpsgGfv8Skv0tK7IUtxKOyWBZxIKAuqMldHBUuXyuM8kaQnYvp1OSB/fqmgYSQ\nIAZFmyoEpwh9g1TDvC+sgvSgol3J/a1ym9AkslJ0PrijinsbXr3IvhdCDrKTbttZ\nFJab/dXQdNJJH9niu5aD3yYOes0mzA9dQOW+ZIWWZe3r2gme1ENCLmCkCQXbk99j\nvJ2hFQECgYEA8B0FaIygSGsGQN7LDifyYWxxKJesB3m+rAC3923Xjl14XMsvJhyK\nHt7OYVItxwBa9+xZ1o10nvAGVphsf+AP8HWhfIL0OPTTr+OK/hT44k42jtraUTbl\neQDT/K3EDDDggJq07uuL2+ET4vZoEGc/ja3Gzr2P+yq015I59slhS4ECgYEA64jx\n3NRD/3UY7yCtK7GKBjRIJNI/ZSdwdjA/68etSGzvZ9HceuQ/neYRxy1ea9+QM+bC\n/RQTALlD479qjk8ccVAGUjg1Pad/ZnzYSQZqEpTntiJO6WCg6CIYR7rce9XvTzqh\nhOEG7c9eR0nGejUCeUAd0VYCZLpv8cKM8jtFq50CgYBjAaRsQqgIlFDEyNjzYldY\nAo36Tef6QSH07Gru1FTwd+wcXw926IevSPHSQT9s8eGQnt1AUZ2Ht7L1W+5JIAuS\ne/51R84J+jGbMfjq4ZzqO5PVfbpNiJRAO64tXz0aRcEcZi464dcOeBVqHW41bU1Q\nTxpNvu4yg56D0OCjuM+sgQKBgGXlGL0wFzqsrdzFhiUg6VVFyPAlBMf+B+kZdo3K\nFG0As5F2eKuxktP8dDR2rCJ+1SOe8TwLMy1c+MHOTYrDLsrWk+V964qAq9zqpabx\n33GqeZORxBGye+nw1hAyBrCMHLtp4fZaY2T+EQtGH1c/F5Lc6gll7CMnhMZSJCem\n/L0BAoGAKROtP6n+nkkuPaFIDyFO4uFo89+bu4BbOglQUcQeHzlctd3y1sLBD30q\n86vBKklQt9q1conpXxHCudcHLtjileLmSDsTXeGN8YlQpRKGZkk7Fln0zyNq6mM5\ndf7TA3CCZHt+XKSbfTeRX3vkcEFEg3OQId7uwcgkw4hCAnQTzzY=\n-----END RSA PRIVATE KEY-----\n",
+    "certificateChain" : "",
+    "certOptions" : {
+      "certificateTransparencyLoggingPreference" : "ENABLED",
+      "export" : "DISABLED"
+    },
+    "certAuthorityArn" : null,
+    "domainValidationOptions" : [ {
+      "domainName" : "acme-empresa.com",
+      "validationDomain" : "acme-empresa.com",
+      "validationStatus" : "PENDING_VALIDATION",
+      "validationMethod" : "DNS",
+      "resourceRecord" : {
+        "name" : "_686cf2c83b2da2ed208f2962fed008bd.acme-empresa.com.",
+        "type" : "CNAME",
+        "value" : "_b79f9145b0bdc035d0d453abe553cdcf.acm-validations.aws."
+      },
+      "validationEmails" : null
+    } ],
+    "idempotencyToken" : null
+  }
+}

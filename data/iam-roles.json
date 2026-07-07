@@ -1,13 +1,13 @@
 {
   "000000000000/AcmeLambdaRole" : {
-    "roleId" : "AROA9JIAIAEMT06406KK",
+    "roleId" : "AROADB65F8KK9I41EQ53",
     "roleName" : "AcmeLambdaRole",
     "path" : "/",
     "arn" : "arn:aws:iam::000000000000:role/AcmeLambdaRole",
     "assumeRolePolicyDocument" : "{\"Version\": \"2012-10-17\",\"Statement\": [{\"Effect\": \"Allow\",\"Principal\": {\"Service\": \"lambda.amazonaws.com\"},\"Action\": \"sts:AssumeRole\"}]}",
     "description" : null,
     "maxSessionDuration" : 3600,
-    "createDate" : "2026-07-03T22:10:16.011035172Z",
+    "createDate" : "2026-07-07T03:58:44.381184219Z",
     "tags" : { },
     "attachedPolicyArns" : [ ],
     "inlinePolicies" : { },
