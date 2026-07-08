@@ -1,4 +1,4 @@
-# 🚀 Proyecto de Portafolio 4: Infraestructura Viva (ACME)
+# Proyecto de Portafolio 4: Infraestructura Viva (ACME)
 
 Este proyecto implementa y despliega de manera automatizada la arquitectura en la nube para la infraestructura de **ACME**, migrando sus servicios locales hacia una solución robusta en AWS simulada mediante **Floci**. 
 
@@ -6,7 +6,7 @@ La arquitectura abarca desde el almacenamiento seguro y bases de datos gestionad
 
 ---
 
-## 🛠️ Prerrequisitos (Entorno Linux)
+## Prerrequisitos (Entorno Linux)
 
 Para ejecutar este despliegue de manera local, asegúrate de contar con las siguientes herramientas en tu sistema operativo Linux:
 
@@ -32,7 +32,7 @@ Para ejecutar este despliegue de manera local, asegúrate de contar con las sigu
 
 ---
 
-## 🚀 Despliegue Automatizado
+## Despliegue Automatizado
 
 El despliegue completo de las 8 partes del portafolio se realiza a través del script principal corregido y validado contra fallas.
 
@@ -47,25 +47,29 @@ El despliegue completo de las 8 partes del portafolio se realiza a través del s
 
 ---
 
-## 🧪 Pruebas de Funcionamiento y Evidencias
+## Diagramas de Arquitectura
 
-Una vez finalizado el despliegue, puedes ejecutar diversas pruebas para recopilar evidencias para tu portafolio. Hemos organizado estas pruebas en archivos dedicados (a crear en el directorio `tests/`):
+A continuación se detallan los tres diagramas que componen la arquitectura cloud para ACME:
 
-### 1. Verificación de Recursos del Sistema
-El script automatizado de pruebas describe y lista todos los recursos creados en tu entorno virtual de AWS (S3, RDS, DynamoDB, Lambda, VPC, ALB, SNS/SQS, y CloudWatch).
-* **Script de prueba:** `[tests/verificar_despliegue.sh](file:///home/jairo/Documentos/BOOTCAMP%20ARQUITECTO%20CLOUD/tests/verificar_despliegue.sh)` *(Pendiente de crear)*
+### 1. Flujo General y Procesamiento
+Muestra el camino que sigue la información desde que el usuario ingresa al sistema. Por un lado, se sirve la web de la empresa de forma rápida y segura mediante una red de distribución (CloudFront) asociada a un almacén de archivos (S3). Por otro lado, las solicitudes de ventas pasan a un balanceador de carga público, se encolan ordenadamente en SQS y son procesadas por una función de cómputo (Lambda) oculta en una red privada, la cual la idea es que interactue con las bases de datos en RDS PostgreSQL y DynamoDB.
 
-### 2. Consultas Relacionales (Lección 2)
-Para simular el comportamiento de consultas SQL complejas requeridas por el bootcamp, puedes utilizar el archivo de scripts SQL en herramientas como SQLiteOnline con dialecto PostgreSQL.
-* **Script SQL de prueba:** `[tests/consultas_prueba.sql](file:///home/jairo/Documentos/BOOTCAMP%20ARQUITECTO%20CLOUD/tests/consultas_prueba.sql)` *(Pendiente de crear)*
+![Diagrama General de la Arquitectura](diagramas/arqui1.png)
 
-### 3. Simulación de Alertas de Monitoreo (Lección 8)
-Prueba que inyecta métricas de falla simuladas para cambiar el estado de las alarmas de CloudWatch a `ALARM` y comprobar la integración con las notificaciones de SNS.
-* **Script de simulación:** `[tests/simular_alerta.sh](file:///home/jairo/Documentos/BOOTCAMP%20ARQUITECTO%20CLOUD/tests/simular_alerta.sh)` *(Pendiente de crear)*
+### 2. Flujo de Almacenamiento y Respaldos
+Explica cómo se protegen los archivos de la empresa a bajo costo. Diariamente se realiza una copia incremental desde el almacenamiento principal hacia un bucket de backup histórico. Ambos almacenes cuentan con reglas automáticas de ciclo de vida que mueven los datos antiguos y los respaldos a una capa de archivo frío (S3 Glacier) para aportar en mnimizar el gasto mensual.
+
+![Diagrama de Almacenamiento y Respaldos](diagramas/arqui2.png)
+
+### 3. Flujo de Monitoreo y Alertas
+Describe la supervisión del sistema ante incidentes. CloudWatch vigila la cantidad de mensajes acumulados en la cola de procesamiento y los fallos de la función Lambda. Si las métricas cruzan los umbrales, se activan alarmas que se comunican con el servicio de notificaciones (SNS) para despachar inmediatamente una alerta al correo electrónico del equipo de soporte.
+
+![Diagrama de Alarmas y Monitoreo](diagramas/arqui3.png)
 
 ---
 
 ## 📄 Entregables y Documentación
 
-* **[Informe de Arquitectura y Justificación de Solución](file:///home/jairo/Documentos/BOOTCAMP%20ARQUITECTO%20CLOUD/docs/informe_arquitectura.md)** *(Pendiente de vincular)*
-  *Este documento detalla los diagramas de arquitectura, las justificaciones de uso de cada servicio y la estrategia de escalabilidad y costos estimados.*
+* **[Informe Final del Proyecto (PDF)](INFORME_FINAL.pdf)**
+  Este informe es el documento maestro que detalla las justificaciones teóricas de los servicios y sus configuraciones.
+

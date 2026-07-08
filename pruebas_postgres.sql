@@ -74,9 +74,3 @@ JOIN clientes c ON v.cliente_id = c.cliente_id
 WHERE v.monto > 1000.00
 ORDER BY v.monto DESC;
 
-
--- [Consulta 4]: Resumen operacional del estado de ventas
--- Propósito: Monitorear el flujo del pipeline comercial y volumen monetario según estado.
-SELECT estado, COUNT(*) AS total_transacciones, SUM(monto) AS monto_total
-FROM ventas
-GROUP BY estado;
