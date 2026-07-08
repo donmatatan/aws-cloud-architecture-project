@@ -17,7 +17,7 @@ Para ejecutar este despliegue de manera local, asegúrate de contar con las sigu
 
 ---
 
-## ⚙️ Preparación del Entorno
+## Preparación del Entorno 
 
 1. **Iniciar el contenedor de Floci/LocalStack**:
    Encuentra el archivo `docker-compose.yml` en la raíz del proyecto y levanta el servicio ejecutando en tu terminal:
