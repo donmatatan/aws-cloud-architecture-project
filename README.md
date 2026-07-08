@@ -49,7 +49,7 @@ El despliegue completo de las 8 partes del portafolio se realiza a través del s
 
 ## Diagramas de Arquitectura
 
-A continuación se detallan los tres diagramas que componen la arquitectura cloud para ACME:
+A continuación se detallan los tres diagramas que componen la solución propuesta para la arquitectura en AWS Cloud para ACME:
 
 ### 1. Flujo General y Procesamiento
 Muestra el camino que sigue la información desde que el usuario ingresa al sistema. Por un lado, se sirve la web de la empresa de forma rápida y segura mediante una red de distribución (CloudFront) asociada a un almacén de archivos (S3). Por otro lado, las solicitudes de ventas pasan a un balanceador de carga público, se encolan ordenadamente en SQS y son procesadas por una función de cómputo (Lambda) oculta en una red privada, la cual la idea es que interactue con las bases de datos en RDS PostgreSQL y DynamoDB.
