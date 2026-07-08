@@ -68,7 +68,7 @@ Describe la supervisión del sistema ante incidentes. CloudWatch vigila la canti
 
 ---
 
-## 📄 Entregables y Documentación
+## Entregable
 
 * **[Informe Final del Proyecto (PDF)](INFORME_FINAL.pdf)**
   Este informe es el documento maestro que detalla las justificaciones teóricas de los servicios y sus configuraciones.
